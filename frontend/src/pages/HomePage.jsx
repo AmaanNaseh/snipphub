@@ -13,9 +13,8 @@ const HomePage = ({ theme }) => {
   const [totalCommands, setTotalCommands] = useState(0);
 
   useEffect(() => {
-    Commands.map((item) =>
-      setTotalCommands((prev) => prev + item.commands.length),
-    );
+    const total = Commands.reduce((sum, item) => sum + item.commands.length, 0);
+    setTotalCommands(total);
   }, []);
 
   return (
