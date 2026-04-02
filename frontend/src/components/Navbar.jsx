@@ -56,33 +56,44 @@ const Navbar = ({ theme, setTheme }) => {
         </li>
       </ul>
 
-      {/* Features Large Screens */}
+      {/* Large Screens Features */}
       {isFeatures && (
         <div
-          className={`hidden z-50 lg:flex fixed top-[80px] left-0 w-full h-fit p-20 items-center justify-start gap-40 flex-wrap bg-white text-black border-y-[1px] border-y-gray-300/25`}
+          className={`hidden z-50 lg:flex fixed top-[80px] left-0 w-full h-fit p-20 items-center justify-start gap-40 flex-wrap border-y-[1px] border-y-gray-300/25 
+            ${
+              theme === "dark"
+                ? "bg-[#0d1117]"
+                : theme === "green"
+                  ? "bg-[#000100]"
+                  : "bg-white"
+            }`}
         >
           {Commands.map((item, index) => {
             return (
               <Link
                 to={item.techRoute}
                 key={index}
-                className="flex items-center gap-8 font-bold group"
+                className="flex items-center gap-8 font-bold group hover:scale-105 transition-all duration-100"
                 onClick={() => {
                   setIsFeatures(false);
                 }}
               >
                 <div
-                  className={`p-2 rounded-xl group-hover:scale-105 transition-all duration-100 ${
+                  className={`p-2 rounded-xl bg-[#f5f5ff] ${
                     theme === "dark"
-                      ? "bg-[#0d1117] text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
+                      ? "text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
                       : theme === "green"
-                        ? "bg-[#0d1117] text-white group-hover:bg-[#00ff41] group-hover:text-black"
-                        : "bg-[#f5f5ff] text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
+                        ? "text-black group-hover:bg-[#00ff41] group-hover:text-black"
+                        : "text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
                   }`}
                 >
                   <item.techIcon className="text-[80px]" />
                 </div>
-                <h1 className="group-hover:underline">{item.techName}</h1>
+                <h1
+                  className={`group-hover:underline ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                >
+                  {item.techName}
+                </h1>
               </Link>
             );
           })}
@@ -129,18 +140,41 @@ const Navbar = ({ theme, setTheme }) => {
       )}
 
       {isSideNav ? (
-        <div className="z-50 fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 bg-white text-black border-y-[1px] border-y-gray-300/25">
+        <div
+          className={`lg:hidden z-50 fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 border-y-[1px] border-y-gray-300/25 ${
+            theme === "dark"
+              ? "bg-[#0d1117]"
+              : theme === "green"
+                ? "bg-[#000100]"
+                : "bg-white"
+          }`}
+        >
           {Commands.map((item, index) => {
             return (
               <Link
                 to={item.techRoute}
                 key={index}
-                className="hover:underline"
+                className="group hover:scale-105 transition-all duration-100 flex items-center gap-2"
                 onClick={() => {
                   setIsSideNav(false);
                 }}
               >
-                {item.techName}
+                <div
+                  className={`p-2 rounded-xl bg-[#f5f5ff] ${
+                    theme === "dark"
+                      ? "text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
+                      : theme === "green"
+                        ? "text-black group-hover:bg-[#00ff41] group-hover:text-black"
+                        : "text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
+                  }`}
+                >
+                  <item.techIcon className="text-lg" />
+                </div>
+                <h1
+                  className={`group-hover:underline ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                >
+                  {item.techName}
+                </h1>
               </Link>
             );
           })}
