@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import HeroAnimation from "../components/HomePage/HeroAnimation";
 import Hero from "../components/HomePage/Hero";
 import Cards from "../components/HomePage/Cards";
+import CodeLaptop from "../components/HomePage/CodeLaptop";
+import CodeMobile from "../components/HomePage/CodeMobile";
 
 const HomePage = ({ theme }) => {
   return (
@@ -14,6 +16,11 @@ const HomePage = ({ theme }) => {
         <HeroAnimation theme={theme} />
         <Hero theme={theme} />
       </div>
+
+      {/* 
+      <CodeLaptop />
+      <CodeMobile />
+      */}
 
       {/* Cards */}
       <Cards theme={theme} />
