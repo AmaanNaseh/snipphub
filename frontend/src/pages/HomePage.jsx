@@ -18,17 +18,12 @@ const HomePage = ({ theme }) => {
   }, []);
 
   return (
-    <div
-      className={`flex flex-col items-center justify-center gap-16 
-        ${theme === "dark" ? "" : theme === "green" ? "" : ""}`}
-    >
+    <div className="flex flex-col items-center justify-center gap-16">
       {/* Header Animation */}
       <HeaderAnimation theme={theme} />
       {/* Hero  */}
       <div className="space-y-8">
-        <div
-          className={`flex flex-col items-center justify-center gap-2 text-center ${theme === "dark" ? "" : theme === "green" ? "" : ""}`}
-        >
+        <div className="flex flex-col items-center justify-center gap-2 text-center">
           <h1
             className={`text-[50px] md:text-[80px] lg:text-[120px] font-bold`}
           >
@@ -37,7 +32,7 @@ const HomePage = ({ theme }) => {
 
           <p
             className={`text-sm md:text-md lg:text-xl ${
-              theme === "dark" ? "" : theme === "green" ? "" : "text-gray-600"
+              theme === "dark" ? "" : "text-gray-600"
             }`}
           >
             Quick access to commonly used commands across different systems and
@@ -46,7 +41,7 @@ const HomePage = ({ theme }) => {
 
           <p
             className={`text-sm md:text-md lg:text-xl ${
-              theme === "dark" ? "" : theme === "green" ? "" : "text-gray-600"
+              theme === "dark" ? "" : "text-gray-600"
             }`}
           >
             Click on any category to explore.
@@ -55,7 +50,7 @@ const HomePage = ({ theme }) => {
 
         <div
           className={`flex flex-wrap items-center justify-center gap-4 font-semibold ${
-            theme === "dark" ? "" : theme === "green" ? "" : "text-gray-600"
+            theme === "dark" ? "" : "text-gray-600"
           }`}
         >
           {/* Categories */}
@@ -75,9 +70,7 @@ const HomePage = ({ theme }) => {
                 className={`z-20 group p-4 min-w-[200px] max-w-[300px] lg:max-w-[350px] min-h-[150px] rounded-xl flex flex-col gap-4 hover:scale-105 transition-all duration-300 ${
                   theme === "dark"
                     ? "bg-[#161b22] border-[1px] border-gray-300/25 hover:border-[#58a6ff]"
-                    : theme === "green"
-                      ? "bg-[#000100] border-[1px] border-gray-300/25 hover:border-[#00ff41]"
-                      : "bg-[#ffffff] shadow-md border-[1px] border-gray-300/25 hover:border-[#165dfc]"
+                    : "bg-[#ffffff] shadow-md border-[1px] border-gray-300/25 hover:border-[#165dfc]"
                 }`}
               >
                 <div className="flex items-center gap-4 font-bold">
@@ -85,9 +78,7 @@ const HomePage = ({ theme }) => {
                     className={`p-2 rounded-xl group-hover:scale-105 transition-all duration-100 ${
                       theme === "dark"
                         ? "bg-[#0d1117] text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
-                        : theme === "green"
-                          ? ""
-                          : "bg-[#f5f5ff] text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
+                        : "bg-[#f5f5ff] text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
                     }`}
                   >
                     <item.techIcon className="text-4xl" />
@@ -100,7 +91,7 @@ const HomePage = ({ theme }) => {
 
                 <p className="text-xs md:text-sm">{item.techDescription}</p>
                 <div
-                  className={`text-xs md:text-sm flex items-center justify-start gap-2 group-hover:gap-4 transition-all duration-100 font-semibold ${theme === "dark" ? "text-[#58a6ff]" : theme === "green" ? "" : "text-[#165dfc]"}`}
+                  className={`text-xs md:text-sm flex items-center justify-start gap-2 group-hover:gap-4 transition-all duration-100 font-semibold ${theme === "dark" ? "text-[#58a6ff]" : "text-[#165dfc]"}`}
                 >
                   <span className="hover:scale-105">View Snippets</span>{" "}
                   <GoArrowRight className="text-2xl" />

@@ -11,31 +11,25 @@ import HomePage from "./pages/HomePage";
 import CommandsPage from "./pages/CommandsPage";
 
 const App = () => {
-  const [theme, setTheme] = useState("light"); // light, dark, green
+  const [theme, setTheme] = useState("dark"); // light, dark
 
   useEffect(() => {
-    if (theme === "light") {
-      document.body.style.backgroundColor = "#ffffff";
-      document.body.style.color = "black";
-    } else if (theme === "dark") {
+    if (theme === "dark") {
       document.body.style.backgroundColor = "#0d1117";
       document.body.style.color = "white";
-    } else if (theme === "green") {
-      document.body.style.backgroundColor = "#000100";
-      document.body.style.color = "#00ff41";
+    } else {
+      document.body.style.backgroundColor = "#ffffff";
+      document.body.style.color = "black";
     }
   }, []);
 
   useEffect(() => {
-    if (theme === "light") {
-      document.body.style.backgroundColor = "#ffffff";
-      document.body.style.color = "black";
-    } else if (theme === "dark") {
+    if (theme === "dark") {
       document.body.style.backgroundColor = "#0d1117";
       document.body.style.color = "white";
-    } else if (theme === "green") {
-      document.body.style.backgroundColor = "#000100";
-      document.body.style.color = "#00ff41";
+    } else {
+      document.body.style.backgroundColor = "#ffffff";
+      document.body.style.color = "black";
     }
   }, [theme]);
 

@@ -12,11 +12,6 @@
 - bg: #0d1117
 - text: #ffffff
 
-### Green (Terminal)
-
-- bg: #000100
-- text: #00ff41
-
 ---
 
 ## 2. Navbar
@@ -33,12 +28,6 @@
 - text: #ffffff
 - brand: #5816ff
 - active: #58a6ff
-
-### Green (Terminal)
-
-- bg: #000100
-- text: #ffffff
-- brand: #00ff41
 
 ---
 
@@ -63,11 +52,6 @@
 - bg: #161b22
 - border-hover: #58a6ff
 
-### Green Variant
-
-- bg: #000100
-- border-hover: #00ff41
-
 ---
 
 ## 4. Sublines
@@ -81,7 +65,6 @@
 
 - light: text-gray-600
 - dark: text-white
-- green: text-white
 
 ---
 
@@ -98,12 +81,6 @@
 - primary: #58a6ff
 - text: #ffffff
 
-### Green
-
-- primary: #00ff41
-- text: #00ff41
-- border: 1px solid #00ff41
-
 ---
 
 ## 6. Borders & Dividers
@@ -114,11 +91,6 @@
 - divider: black/25
 
 ### Dark
-
-- border: gray-300/25
-- divider: white
-
-### Green
 
 - border: gray-300/25
 - divider: white
@@ -134,7 +106,7 @@
 - border: 1px solid #000000
 - rounded: md
 
-### Dark/Green Override (Recommended Improvement)
+### Dark Override (Recommended Improvement)
 
 - bg: #161b22
 - text: #ffffff
@@ -161,10 +133,6 @@
 ### Dark Active
 
 - color: #58a6ff
-
-### Green Active
-
-- color: #00ff41
 
 ### Hover Behavior
 

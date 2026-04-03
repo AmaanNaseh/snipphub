@@ -181,7 +181,7 @@ export default function HeaderAnimation({ theme }) {
         {/* Content */}
         <div className="p-6 min-h-[300px]">
           <h1
-            className={`text-3xl font-bold ${theme === "dark" ? "text-[#58a6ff]" : theme === "green" ? "text-[#00ff41]" : "text-[#165dfc]"}`}
+            className={`text-3xl font-bold ${theme === "dark" ? "text-[#58a6ff]" : "text-[#165dfc]"}`}
           >
             {typedTitle}
             {animationPhase === 0 && cursorVisible && "|"}
@@ -205,7 +205,7 @@ export default function HeaderAnimation({ theme }) {
         {/* Mouse */}
         {showMouse && (
           <motion.div
-            className={`absolute w-8 h-8 rounded-full border-2 pointer-events-none ${theme === "dark" ? "bg-[#58a6ff]/40 border-[#58a6ff]" : theme === "green" ? "bg-[#00ff41]/40 border-[#00ff41]" : "bg-[#165dfc]/40 border-[#165dfc]"}`}
+            className={`absolute w-8 h-8 rounded-full border-2 pointer-events-none ${theme === "dark" ? "bg-[#58a6ff]/40 border-[#58a6ff]" : "bg-[#165dfc]/40 border-[#165dfc]"}`}
             style={{
               left: mousePosition.x,
               top: mousePosition.y,
