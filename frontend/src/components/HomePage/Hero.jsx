@@ -14,22 +14,50 @@ const Hero = ({ theme }) => {
   return (
     <div className="w-full flex flex-col items-center gap-10">
       <div className="text-center">
-        <h1 className={`text-[50px] md:text-[80px] font-bold`}>
-          {"<"}SNIPLINE {"/>"}
+        <h1 className="text-[50px] md:text-[80px] font-bold">
+          SNIP
+          <span className="bg-clip-text text-transparent bg-card-gradient-light">
+            LINE
+          </span>
         </h1>
 
         <p className="text-sm md:text-md lg:text-lg">
-          Quick access to commonly used commands across different systems and
-          platforms. <br /> Click on any category to explore.
+          A curated hub of powerful code snippets and CLI commands to speed up
+          your workflow. Copy instantly, paste effortlessly, use seamlessly and
+          collaborate with ease.
         </p>
       </div>
 
-      {/* Categories */}
-      <div className="text-center space-y-4">
-        <p className="text-lg lg:text-xl font-semibold">
-          {Commands ? Commands.length : "Loading"} categories:
-        </p>
+      <div className="space-y-12">
+        {/* Features */}
 
+        <div className="flex flex-wrap items-center justify-center gap-8 text-sm md:text-md lg:text-lg font-semibold">
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            {totalCommands} commands
+          </p>
+
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            {Commands ? Commands.length : "Loading"} technologies
+          </p>
+
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            Ready-Made Snippets
+          </p>
+
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            Command Line
+          </p>
+
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            Bash Scripting
+          </p>
+
+          <p className="bg-card-gradient-light px-2 py-1 rounded">
+            Collaboration
+          </p>
+        </div>
+
+        {/* Technologies */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
           {Commands.map((item) => {
             return (
