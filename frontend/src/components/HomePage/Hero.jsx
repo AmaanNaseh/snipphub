@@ -12,40 +12,35 @@ const Hero = ({ theme }) => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center gap-4">
-      <div className="flex flex-col items-center justify-center gap-2 text-center">
+    <div className="w-full flex flex-col items-center gap-10">
+      <div className="text-center">
         <h1 className={`text-[50px] md:text-[80px] font-bold`}>
           {"<"}SNIPLINE {"/>"}
         </h1>
 
-        <p
-          className={`text-sm md:text-md lg:text-lg ${
-            theme === "dark" ? "" : "text-gray-600"
-          }`}
-        >
+        <p className="text-sm md:text-md lg:text-lg">
           Quick access to commonly used commands across different systems and
-          platforms.
-        </p>
-
-        <p
-          className={`text-sm md:text-md lg:text-lg ${
-            theme === "dark" ? "" : "text-gray-600"
-          }`}
-        >
-          Click on any category to explore.
+          platforms. <br /> Click on any category to explore.
         </p>
       </div>
 
-      <div
-        className={`flex flex-wrap items-center justify-center gap-4 font-semibold ${
-          theme === "dark" ? "" : "text-gray-600"
-        }`}
-      >
-        {/* Categories */}
-        <p>{Commands ? Commands.length : "Loading"} categories</p>
-        <span>|</span>
-        {/* Commands */}
-        <p>{totalCommands} commands</p>
+      {/* Categories */}
+      <div className="text-center space-y-4">
+        <p className="text-lg lg:text-xl font-semibold">
+          {Commands ? Commands.length : "Loading"} categories:
+        </p>
+
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
+          {Commands.map((item) => {
+            return (
+              <div
+                className={`p-2 rounded text-xl md:text-2xl lg:text-3xl ${theme === "dark" ? "bg-[#58a6ff] text-black" : "bg-[#165dfc] text-white"}`}
+              >
+                <item.techIcon />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

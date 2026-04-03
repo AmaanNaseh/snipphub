@@ -12,11 +12,10 @@ import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
-import { IoTerminal } from "react-icons/io5";
 
 const Navbar = ({ theme, setTheme }) => {
   const [isSideNav, setIsSideNav] = useState(false);
-  const [isFeatures, setIsFeatures] = useState(false);
+  const [isTechnologies, setIsTechnologies] = useState(false);
 
   return (
     <nav
@@ -29,9 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
           {"<"}Snipline {"/>"}
         </h1>
       </Link>
-
       {/* Large screens */}
-
       <ul className="hidden lg:inline-flex items-center justify-center gap-12">
         <Link to={"/"}>
           <li
@@ -44,20 +41,19 @@ const Navbar = ({ theme, setTheme }) => {
         <li
           className={`hover:scale-105 hover:underline transition-all duration-300 cursor-pointer flex items-center gap-2 ${theme === "dark" ? "text-white" : "text-black"}`}
           onClick={() => {
-            setIsFeatures(!isFeatures);
+            setIsTechnologies(!isTechnologies);
           }}
         >
-          Features
+          Technologies
           <span
             className={`p-1 text-sm rounded-full border-[1px] ${theme === "dark" ? "border-white" : "border-black"}`}
           >
-            {isFeatures ? <FaAngleUp /> : <FaAngleDown />}
+            {isTechnologies ? <FaAngleUp /> : <FaAngleDown />}
           </span>
         </li>
       </ul>
-
-      {/* Large Screens Features */}
-      {isFeatures && (
+      {/* Large Screens Technologies */}
+      {isTechnologies && (
         <div
           className={`hidden z-50 lg:flex fixed top-[80px] left-0 w-full h-fit p-20 items-center justify-start gap-40 flex-wrap border-y-[1px] border-y-gray-300/25 
             ${theme === "dark" ? "bg-[#0d1117]" : "bg-white"}`}
@@ -69,7 +65,7 @@ const Navbar = ({ theme, setTheme }) => {
                 key={index}
                 className="flex items-center gap-8 font-bold group hover:scale-105 transition-all duration-100"
                 onClick={() => {
-                  setIsFeatures(false);
+                  setIsTechnologies(false);
                 }}
               >
                 <div
@@ -93,22 +89,27 @@ const Navbar = ({ theme, setTheme }) => {
       )}
 
       {/* Theme Toggle */}
-      <div className="flex flex-wrap items-center gap-2 p-2 text-3xl border-[1px] border-gray-600">
-        <CiLight
+      {theme === "dark" ? (
+        <div
+          className="p-2 rounded-xl text-3xl  bg-[#f5f5ff] text-black border-[1px] border-gray-600 cursor-pointer hover:scale-105 transition-all duration-100"
           onClick={() => {
             setTheme("light");
             localStorage.setItem("theme", "light");
           }}
-          className={`cursor-pointer hover:scale-105 transition-all duration-300 ${theme === "light" ? "text-[#165dfc]" : "hover:text-[#165dfc]"}`}
-        />
-        <MdDarkMode
+        >
+          <CiLight />
+        </div>
+      ) : (
+        <div
+          className="p-2 rounded-xl text-3xl bg-[#0d1117] text-white border-[1px] border-gray-600 cursor-pointer hover:scale-105 transition-all duration-100"
           onClick={() => {
             setTheme("dark");
             localStorage.setItem("theme", "dark");
           }}
-          className={`cursor-pointer hover:scale-105 transition-all duration-300 ${theme === "dark" ? "text-[#58a6ff]" : "hover:text-[#58a6ff]"}`}
-        />
-      </div>
+        >
+          <MdDarkMode />
+        </div>
+      )}
 
       {/* Small screens */}
       {isSideNav ? (
@@ -126,7 +127,6 @@ const Navbar = ({ theme, setTheme }) => {
           }}
         />
       )}
-
       {isSideNav ? (
         <div
           className={`lg:hidden z-50 fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 border-y-[1px] border-y-gray-300/25 ${
