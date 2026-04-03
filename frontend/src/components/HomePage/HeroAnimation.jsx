@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Check, Copy } from "lucide-react";
 
-export default function HeaderAnimation({ theme }) {
+export default function HeroAnimation({ theme }) {
   const [typedTitle, setTypedTitle] = useState("");
   const [typedDescription, setTypedDescription] = useState("");
   const [typedCode, setTypedCode] = useState("");
@@ -146,7 +146,7 @@ export default function HeaderAnimation({ theme }) {
       animate={{ opacity: 1, scale: 1 }}
       className="w-full mb-12 relative"
     >
-      <div className="bg-[#0d1117] border border-slate-700 rounded-2xl overflow-hidden relative w-full h-full min-h-[500px]">
+      <div className="relative overflow-hidden w-full h-full min-h-[500px] bg-[#0d1117] border border-slate-700 rounded-2xl">
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 bg-slate-800 border-b border-slate-700">
           <span className="text-sm text-slate-400">snipline.js</span>
@@ -181,7 +181,7 @@ export default function HeaderAnimation({ theme }) {
         {/* Content */}
         <div className="p-6 min-h-[300px]">
           <h1
-            className={`text-3xl font-bold ${theme === "dark" ? "text-[#58a6ff]" : theme === "green" ? "text-[#00ff41]" : "text-[#165dfc]"}`}
+            className={`text-3xl font-bold ${theme === "dark" ? "text-[#58a6ff]" : "text-[#165dfc]"}`}
           >
             {typedTitle}
             {animationPhase === 0 && cursorVisible && "|"}
@@ -205,7 +205,7 @@ export default function HeaderAnimation({ theme }) {
         {/* Mouse */}
         {showMouse && (
           <motion.div
-            className={`absolute w-8 h-8 rounded-full border-2 pointer-events-none ${theme === "dark" ? "bg-[#58a6ff]/40 border-[#58a6ff]" : theme === "green" ? "bg-[#00ff41]/40 border-[#00ff41]" : "bg-[#165dfc]/40 border-[#165dfc]"}`}
+            className={`absolute w-8 h-8 rounded-full border-2 pointer-events-none ${theme === "dark" ? "bg-[#58a6ff]/40 border-[#58a6ff]" : "bg-[#165dfc]/40 border-[#165dfc]"}`}
             style={{
               left: mousePosition.x,
               top: mousePosition.y,

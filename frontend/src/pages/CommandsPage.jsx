@@ -40,7 +40,7 @@ const CommandsPage = ({ theme }) => {
       <div className="space-y-10">
         <Link to={"/"}>
           <p
-            className={`text-md md:text-lg lg:text-xl text-gray-600 font-semibold flex items-center gap-2 ${theme === "dark" ? "hover:text-gray-100" : theme === "green" ? "hover:text-gray-100" : "hover:text-black"}`}
+            className={`text-md md:text-lg lg:text-xl text-gray-600 font-semibold flex items-center gap-2 ${theme === "dark" ? "hover:text-gray-100" : "hover:text-black"}`}
           >
             <IoIosArrowBack /> Back to categories
           </p>
@@ -52,18 +52,18 @@ const CommandsPage = ({ theme }) => {
             <div className="flex flex-col gap-8">
               <div className="flex items-center gap-4 md:gap-8">
                 <div
-                  className={`p-4 rounded-xl font-bold ${theme === "dark" ? "bg-[#58a6ff] text-white" : theme === "green" ? "bg-[#161b22]" : "bg-card-gradient-light text-white"}`}
+                  className={`p-4 rounded-xl font-bold ${theme === "dark" ? "bg-[#58a6ff] text-white" : "bg-card-gradient-light text-white"}`}
                 >
                   <tech.techIcon className="text-[80px]" />
                 </div>
                 <div
-                  className={`flex flex-col items-start gap-1 md:gap-2 ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                  className={`flex flex-col items-start gap-1 md:gap-2 ${theme === "dark" ? "text-white" : "text-black"}`}
                 >
                   <h1 className="font-bold text-xl md:text-2xl lg:text-3xl">
                     {tech.techName}
                   </h1>
                   <p
-                    className={`text-sm md:text-md lg:text-lg ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                    className={`text-sm md:text-md lg:text-lg ${theme === "dark" ? "text-white" : "text-black"}`}
                   >
                     {tech.techDescription}
                   </p>
@@ -82,7 +82,7 @@ const CommandsPage = ({ theme }) => {
             {/* Search Bar */}
             <div className="w-full flex items-center justify-center gap-2">
               <CiSearch
-                className={`text-4xl ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                className={`text-4xl ${theme === "dark" ? "text-white" : "text-black"}`}
               />
               <input
                 type="text"
@@ -104,9 +104,7 @@ const CommandsPage = ({ theme }) => {
                   ${
                     theme === "dark"
                       ? `bg-[#161b22] ${filter === "All" ? "bg-[#58a6ff] text-white" : "border-gray-300/25 hover:border-[#58a6ff]"}`
-                      : theme === "green"
-                        ? `bg-[#161b22] ${filter === "All" ? "border-[#00ff41] text-[#00ff41]" : "text-white hover:text-[#00ff41] hover:border-[#00ff41]"}`
-                        : `shadow-md ${filter === "All" ? "bg-[#165dfc] text-white" : "bg-[#ffffff]  hover:bg-gray-100 text-black border-gray-300/25 hover:border-[#165dfc]"}`
+                      : `shadow-md ${filter === "All" ? "bg-[#165dfc] text-white" : "bg-[#ffffff]  hover:bg-gray-100 text-black border-gray-300/25 hover:border-[#165dfc]"}`
                   } `}
               >
                 All ({tech.commands.length || "0"})
@@ -125,9 +123,7 @@ const CommandsPage = ({ theme }) => {
                           ${
                             theme === "dark"
                               ? `bg-[#161b22] ${filter === category ? "bg-[#58a6ff] text-white" : "border-gray-300/25 hover:border-[#58a6ff]"}`
-                              : theme === "green"
-                                ? `bg-[#161b22] ${filter === category ? "border-[#00ff41] text-[#00ff41]" : "text-white hover:text-[#00ff41] hover:border-[#00ff41]"}`
-                                : `shadow-md ${filter === category ? "bg-[#165dfc] text-white" : "bg-[#ffffff] hover:bg-gray-100 hover:text-black border-gray-300/25 hover:border-[#165dfc]"}`
+                              : `shadow-md ${filter === category ? "bg-[#165dfc] text-white" : "bg-[#ffffff] hover:bg-gray-100 hover:text-black border-gray-300/25 hover:border-[#165dfc]"}`
                           } `}
                         >
                           {category} (
@@ -154,7 +150,7 @@ const CommandsPage = ({ theme }) => {
                         return (
                           <div
                             key={index}
-                            className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : theme === "green" ? "" : "bg-[#ffffff] shadow-md"}`}
+                            className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : "bg-[#ffffff] shadow-md"}`}
                           >
                             <div className="w-full flex items-center justify-between flex-wrap gap-2">
                               <h1 className="font-bold text-md md:text-lg lg:text-xl">
@@ -165,16 +161,14 @@ const CommandsPage = ({ theme }) => {
                                 className={`p-2 rounded text-white ${
                                   theme === "dark"
                                     ? "bg-[#58a6ff]"
-                                    : theme === "green"
-                                      ? "border-[1px] border-[#00ff41]"
-                                      : "bg-[#165dfc]"
+                                    : "bg-[#165dfc]"
                                 }`}
                               >
                                 {item.cmdCategory}
                               </p>
                             </div>
                             <p
-                              className={`text-sm md:text-md lg:text-lg ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                              className={`text-sm md:text-md lg:text-lg ${theme === "dark" ? "text-white" : "text-black"}`}
                             >
                               {item.cmdDescription}
                             </p>
@@ -197,7 +191,7 @@ const CommandsPage = ({ theme }) => {
                           return (
                             <div
                               key={index}
-                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : theme === "green" ? "" : "bg-[#ffffff] shadow-md"}`}
+                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : "bg-[#ffffff] shadow-md"}`}
                             >
                               <div className="w-full flex items-center justify-between flex-wrap gap-2">
                                 <h1 className="font-bold text-md md:text-lg lg:text-xl">
@@ -208,16 +202,14 @@ const CommandsPage = ({ theme }) => {
                                   className={`p-2 rounded text-white ${
                                     theme === "dark"
                                       ? "bg-[#58a6ff]"
-                                      : theme === "green"
-                                        ? "border-[1px] border-[#00ff41]"
-                                        : "bg-[#165dfc]"
+                                      : "bg-[#165dfc]"
                                   }`}
                                 >
                                   {item.cmdCategory}
                                 </p>
                               </div>
                               <p
-                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" ? "text-white" : "text-black"}`}
                               >
                                 {item.cmdDescription}
                               </p>
@@ -248,7 +240,7 @@ const CommandsPage = ({ theme }) => {
                           return (
                             <div
                               key={index}
-                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : theme === "green" ? "" : "bg-[#ffffff] shadow-md"}`}
+                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : "bg-[#ffffff] shadow-md"}`}
                             >
                               <div className="w-full flex items-center justify-between flex-wrap gap-2">
                                 <h1 className="font-bold text-md md:text-lg lg:text-xl">
@@ -259,16 +251,14 @@ const CommandsPage = ({ theme }) => {
                                   className={`p-2 rounded text-white ${
                                     theme === "dark"
                                       ? "bg-[#58a6ff]"
-                                      : theme === "green"
-                                        ? "border-[1px] border-[#00ff41]"
-                                        : "bg-[#165dfc]"
+                                      : "bg-[#165dfc]"
                                   }`}
                                 >
                                   {item.cmdCategory}
                                 </p>
                               </div>
                               <p
-                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" ? "text-white" : "text-black"}`}
                               >
                                 {item.cmdDescription}
                               </p>
@@ -295,7 +285,7 @@ const CommandsPage = ({ theme }) => {
                           return (
                             <div
                               key={index}
-                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : theme === "green" ? "" : "bg-[#ffffff] shadow-md"}`}
+                              className={`z-20 w-full lg:max-w-[75%] p-4 rounded-xl border-[1px] border-gray-300/25 flex flex-col gap-4 ${theme === "dark" ? "bg-[#161b22]" : "bg-[#ffffff] shadow-md"}`}
                             >
                               <div className="w-full flex items-center justify-between flex-wrap gap-2">
                                 <h1 className="font-bold text-md md:text-lg lg:text-xl">
@@ -306,16 +296,14 @@ const CommandsPage = ({ theme }) => {
                                   className={`p-2 rounded text-white ${
                                     theme === "dark"
                                       ? "bg-[#58a6ff]"
-                                      : theme === "green"
-                                        ? "border-[1px] border-[#00ff41]"
-                                        : "bg-[#165dfc]"
+                                      : "bg-[#165dfc]"
                                   }`}
                                 >
                                   {item.cmdCategory}
                                 </p>
                               </div>
                               <p
-                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" || theme === "green" ? "text-white" : "text-black"}`}
+                                className={`text-sm md:text-md lg:text-lg ${theme === "dark" ? "text-white" : "text-black"}`}
                               >
                                 {item.cmdDescription}
                               </p>
