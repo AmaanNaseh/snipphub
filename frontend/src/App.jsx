@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 // Pages
 import HomePage from "./pages/HomePage";
 import CommandsPage from "./pages/CommandsPage";
+import DarkBg from "./components/Themes/DarkBg";
+import LightBg from "./components/Themes/LightBg";
 
 const App = () => {
   const [theme, setTheme] = useState("dark"); // light, dark
@@ -47,6 +49,8 @@ const App = () => {
       />
 
       <Navbar theme={theme} setTheme={setTheme} />
+
+      {theme === "dark" ? <DarkBg /> : <LightBg />}
 
       <div className="min-h-screen py-20 px-4 md:px-12 lg:px-20">
         <Routes>

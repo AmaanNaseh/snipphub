@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Check, Copy } from "lucide-react";
 
-export default function HeaderAnimation({ theme }) {
+export default function HeroAnimation({ theme }) {
   const [typedTitle, setTypedTitle] = useState("");
   const [typedDescription, setTypedDescription] = useState("");
   const [typedCode, setTypedCode] = useState("");
@@ -146,7 +146,7 @@ export default function HeaderAnimation({ theme }) {
       animate={{ opacity: 1, scale: 1 }}
       className="w-full mb-12 relative"
     >
-      <div className="bg-[#0d1117] border border-slate-700 rounded-2xl overflow-hidden relative w-full h-full min-h-[500px]">
+      <div className="relative overflow-hidden w-full h-full min-h-[500px] bg-[#0d1117] border border-slate-700 rounded-2xl">
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 bg-slate-800 border-b border-slate-700">
           <span className="text-sm text-slate-400">snipline.js</span>
