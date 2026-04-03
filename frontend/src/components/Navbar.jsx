@@ -97,12 +97,14 @@ const Navbar = ({ theme, setTheme }) => {
         <CiLight
           onClick={() => {
             setTheme("light");
+            localStorage.setItem("theme", "light");
           }}
           className={`cursor-pointer hover:scale-105 transition-all duration-300 ${theme === "light" ? "text-[#165dfc]" : "hover:text-[#165dfc]"}`}
         />
         <MdDarkMode
           onClick={() => {
             setTheme("dark");
+            localStorage.setItem("theme", "dark");
           }}
           className={`cursor-pointer hover:scale-105 transition-all duration-300 ${theme === "dark" ? "text-[#58a6ff]" : "hover:text-[#58a6ff]"}`}
         />

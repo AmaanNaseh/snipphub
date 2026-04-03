@@ -13,7 +13,17 @@ import DarkBg from "./components/Themes/DarkBg";
 import LightBg from "./components/Themes/LightBg";
 
 const App = () => {
-  const [theme, setTheme] = useState("dark"); // light, dark
+  const [theme, setTheme] = useState(null); // light, dark
+
+  const storedTheme = localStorage.getItem("theme");
+
+  useEffect(() => {
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else {
+      setTheme("dark");
+    }
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
