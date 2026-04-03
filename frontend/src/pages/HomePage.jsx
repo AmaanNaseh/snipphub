@@ -12,7 +12,7 @@ const HomePage = ({ theme }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-40">
       {/* Hero Section */}
-      <div className="w-full flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-between gap-5 lg:gap-10">
+      <div className="w-full flex flex-col lg:flex-row-reverse items-center justify-center lg:items-start lg:justify-between gap-5 lg:gap-10">
         <HeroAnimation theme={theme} />
         <Hero theme={theme} />
       </div>
