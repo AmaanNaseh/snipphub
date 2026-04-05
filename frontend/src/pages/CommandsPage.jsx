@@ -35,6 +35,10 @@ const CommandsPage = ({ theme }) => {
     }
   };
 
+  useEffect(() => {
+    setFilter("All");
+  }, [location.pathname]);
+
   return (
     <>
       <div className="space-y-10">

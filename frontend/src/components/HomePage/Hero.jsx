@@ -31,7 +31,7 @@ const Hero = ({ theme }) => {
       <div className="space-y-12">
         {/* Features */}
 
-        <div className="flex flex-wrap items-center justify-center gap-8 text-sm md:text-md lg:text-lg font-semibold">
+        <div className="flex flex-wrap items-center justify-center gap-8 text-sm md:text-md lg:text-lg font-semibold text-white">
           <p className="bg-card-gradient-light px-2 py-1 rounded">
             {totalCommands} commands
           </p>
