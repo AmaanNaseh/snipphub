@@ -146,7 +146,7 @@ const Navbar = ({ theme, setTheme }) => {
                 <div
                   className={`p-2 rounded-xl bg-[#f5f5ff] ${
                     theme === "dark"
-                      ? "text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
+                      ? "text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white"
                       : "text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
                   }`}
                 >
