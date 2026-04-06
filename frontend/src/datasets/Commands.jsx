@@ -486,6 +486,23 @@ export const Commands = [
         cmd: "git pull origin branchName",
       },
 
+      {
+        cmdTitle: "To cut all the changes in given branch",
+        cmdDescription:
+          "It is used to cut all the changes done in a branch so that it can be pasted in other branch.",
+        cmdCategory: "Branching",
+        cmd: "git stash",
+      },
+
+      {
+        cmdTitle:
+          "To paste all the changes in given branch from a stashed branch",
+        cmdDescription:
+          "It is used to paste all the changes done in stashed branch to current branch.",
+        cmdCategory: "Branching",
+        cmd: "git stash pop",
+      },
+
       // Reverting Changes
       {
         cmdTitle: "Resetting 1 staged file",
