@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 // Datasets
 import { Commands } from "../datasets/Commands";
@@ -16,6 +16,8 @@ import { MdDarkMode } from "react-icons/md";
 const Navbar = ({ theme, setTheme }) => {
   const [isSideNav, setIsSideNav] = useState(false);
   const [isTechnologies, setIsTechnologies] = useState(false);
+
+  const location = useLocation();
 
   return (
     <nav
@@ -69,10 +71,10 @@ const Navbar = ({ theme, setTheme }) => {
                 }}
               >
                 <div
-                  className={`p-2 rounded-xl bg-[#f5f5ff] ${
+                  className={`p-2 rounded-xl  ${
                     theme === "dark"
-                      ? "text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white"
-                      : "text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
+                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white ${item.techRoute === location.pathname ? "bg-card-gradient-light text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-[80px]" />
@@ -144,10 +146,10 @@ const Navbar = ({ theme, setTheme }) => {
                 }}
               >
                 <div
-                  className={`p-2 rounded-xl bg-[#f5f5ff] ${
+                  className={`p-2 rounded-xl ${
                     theme === "dark"
-                      ? "text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white"
-                      : "text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white"
+                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-card-gradient-light group-hover:text-white ${item.techRoute === location.pathname ? "bg-card-gradient-light text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-lg" />
