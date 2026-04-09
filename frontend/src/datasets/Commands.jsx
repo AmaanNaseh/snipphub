@@ -1,4 +1,10 @@
-import { FaLinux, FaGithub, FaDocker, FaNodeJs } from "react-icons/fa";
+import {
+  FaLinux,
+  FaGithub,
+  FaDocker,
+  FaNodeJs,
+  FaReadme,
+} from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
@@ -2064,6 +2070,103 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
 	if (keys.length>0) await client.del(keys);
 	// res.json code
 }`,
+      },
+    ],
+  },
+
+  // Markup Files
+  {
+    techRoute: "/commands/markupfiles",
+    techName: "Markup Files",
+    techIcon: FaReadme,
+    techDescription:
+      "Markup files are special type of text whiles which are used to write formatted text. It is similar to HTML and we can use HTMl tags here too.",
+    commands: [
+      // Syntax
+      {
+        cmdTitle: "Headings",
+        cmdDescription:
+          "It is used to give level-wise headings to increase text size.",
+        cmdCategory: "Syntax",
+        cmd: `# H1
+## H2
+### H3`,
+      },
+
+      {
+        cmdTitle: "Text formatting",
+        cmdDescription: "It is used to bold, italicize and cut text.",
+        cmdCategory: "Syntax",
+        cmd: `**bold text**
+*italic text*
+~~strikethrough~~`,
+      },
+
+      {
+        cmdTitle: "Lists (unordered & ordered)",
+        cmdDescription:
+          "It is used to bold, italicize and cut text. In place of -, use desirable list numbering format for ordered list e.g. 1, 2, 3.",
+        cmdCategory: "Syntax",
+        cmd: `- Item 1
+- Item 2
+  - Sub Item 2.1 with indentation`,
+      },
+
+      {
+        cmdTitle: "Links and Images",
+        cmdDescription: "It is used to attach links/images to the file.",
+        cmdCategory: "Syntax",
+        cmd: `[Text to display](link)
+[Alt text](image link)`,
+      },
+
+      {
+        cmdTitle: "Shaded text (usually code/routes)",
+        cmdDescription:
+          "It is used to shade the given text e.g. small snippet for syntax, routes, etc.",
+        cmdCategory: "Syntax",
+        cmd: "`text to shade`",
+      },
+
+      {
+        cmdTitle: "Block of code",
+        cmdDescription:
+          "It is used to provide a block of code with proper IDE like view.",
+        cmdCategory: "Syntax",
+        cmd: "```\nblock of code\n```",
+      },
+
+      {
+        cmdTitle: "Block of code with copy button",
+        cmdDescription:
+          "It is used to provide a block of code with copy button.",
+        cmdCategory: "Syntax",
+        cmd: "```bash\nblock of code\n```",
+      },
+
+      {
+        cmdTitle: "Block of code with comments",
+        cmdDescription: "It is used to provide a comment in block of code.",
+        cmdCategory: "Syntax",
+        cmd: "```md\n> comment\n```",
+      },
+
+      {
+        cmdTitle: "Tables",
+        cmdDescription:
+          "It is used to create a table. Data block size is auto-adjusted.",
+        cmdCategory: "Syntax",
+        cmd: `| Col1 | Col2 |
+| ---- | ---- |
+| Row1 | Row1 |
+| Row2 | Row2 |`,
+      },
+
+      {
+        cmdTitle: "Horizontal line for separation",
+        cmdDescription: "It is used to provide a horizontal separation line.",
+        cmdCategory: "Syntax",
+        cmd: "---",
       },
     ],
   },
