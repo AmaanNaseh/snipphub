@@ -16,13 +16,13 @@ export default function CodeLaptop() {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const code = `while(true) {
-  echo Snipline
-  printf("Snipline");
-  cout << "Snipline";
-  console.log("Snipline");
-  print("Snipline");
-  git commit -m "Snipline";
-  SELECT * FROM Snipline;
+  echo SnippHub
+  printf("SnippHub");
+  cout << "SnippHub";
+  console.log("SnippHub");
+  print("SnippHub");
+  git commit -m "SnippHub";
+  SELECT * FROM SnippHub;
 }`;
 
   // typing animation

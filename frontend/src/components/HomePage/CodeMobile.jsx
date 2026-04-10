@@ -16,13 +16,13 @@ export default function CodeMobile() {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const code = `while(true) {
-  echo Snipline
-  printf("Snipline");
-  cout << "Snipline";
-  console.log("Snipline");
-  print("Snipline");
-  git commit -m "Snipline";
-  SELECT * FROM Snipline;
+  echo SnippHub
+  printf("SnippHub");
+  cout << "SnippHub";
+  console.log("SnippHub");
+  print("SnippHub");
+  git commit -m "SnippHub";
+  SELECT * FROM SnippHub;
 }`;
 
   // cursor blink
@@ -131,7 +131,7 @@ export default function CodeMobile() {
                           <span className="text-white">.</span>
                           <span className="text-yellow-400">log</span>
                           <span className="text-white">("</span>
-                          <span className="text-green-400">Snipline</span>
+                          <span className="text-green-400">SnippHub</span>
                           <span className="text-white">");</span>
                         </>
                       ) : (

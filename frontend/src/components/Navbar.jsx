@@ -27,7 +27,7 @@ const Navbar = ({ theme, setTheme }) => {
         <h1
           className={`font-bold text-lg lg:text-2xl hover:scale-105 transition-all duration-300 ${theme === "dark" ? "text-[#58a6ff]" : "text-[#165dfc]"}`}
         >
-          {"<"}SnipHub {"/>"}
+          {"<"}SnippHub {"/>"}
         </h1>
       </Link>
       {/* Large screens */}
