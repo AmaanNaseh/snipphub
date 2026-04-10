@@ -44,7 +44,7 @@ const CommandsPage = ({ theme }) => {
       <div className="space-y-10">
         <Link to={"/"}>
           <p
-            className={`text-md md:text-lg lg:text-xl text-gray-600 font-semibold flex items-center gap-2 ${theme === "dark" ? "hover:text-gray-100" : "hover:text-black"}`}
+            className={`text-md md:text-lg lg:text-xl text-gray-500 font-semibold flex items-center gap-2 ${theme === "dark" ? "hover:text-gray-100" : "hover:text-black"}`}
           >
             <IoIosArrowBack /> Back to categories
           </p>
@@ -75,7 +75,7 @@ const CommandsPage = ({ theme }) => {
               </div>
 
               {tech.commands.length > 0 ? (
-                <p className="text-sm md:text-md lg:text-lg text-gray-600 font-semibold">
+                <p className="text-sm md:text-md lg:text-lg text-gray-500 font-semibold">
                   {tech.commands.length || "Loading..."} commands available
                 </p>
               ) : (

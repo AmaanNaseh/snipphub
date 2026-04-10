@@ -59,9 +59,10 @@ const Hero = ({ theme }) => {
 
         {/* Technologies */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
-          {Commands.map((item) => {
+          {Commands.map((item, index) => {
             return (
               <div
+                key={index}
                 className={`p-2 rounded text-xl md:text-2xl lg:text-3xl ${theme === "dark" ? "bg-[#58a6ff] text-black" : "bg-[#165dfc] text-white"}`}
               >
                 <item.techIcon />

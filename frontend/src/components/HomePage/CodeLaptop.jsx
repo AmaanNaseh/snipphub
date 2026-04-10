@@ -71,7 +71,7 @@ export default function CodeLaptop() {
 
   return (
     <div
-      className="w-full flex justify-center items-center perspective-[2000px]"
+      className="flex justify-center items-center perspective-[2000px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleLeave}
     >
