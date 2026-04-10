@@ -8,22 +8,66 @@ import Cards from "../components/HomePage/Cards";
 import CodeLaptop from "../components/HomePage/CodeLaptop";
 import CodeMobile from "../components/HomePage/CodeMobile";
 
+import SectionTitle from "../components/SectionTitle";
+
 const HomePage = ({ theme }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-40">
+    <div className="flex flex-col items-center justify-center gap-28">
       {/* Hero Section */}
       <div className="w-full flex flex-col lg:flex-row-reverse items-center justify-center lg:items-start lg:justify-between gap-5 lg:gap-10">
         <HeroAnimation theme={theme} />
         <Hero theme={theme} />
       </div>
 
-      {/* 
-      <CodeLaptop />
-      <CodeMobile />
-      */}
+      <div className="space-y-16">
+        <SectionTitle
+          title={"Why SnipHub ?"}
+          description={
+            "Unlike AI, it helps you to memorize commands by copying and updating as per your usecase"
+          }
+        />
+
+        <div className="flex flex-col-reverse items-center justify-center md:flex-row flex-wrap gap-10 md:gap-20 lg:gap-40">
+          <p className="md:w-[30%] text-justify">
+            Instead of relying on AI every time, SnipHub helps you build muscle
+            memory by encouraging you to copy, tweak, and reuse commands
+            tailored to your workflow. With a growing library of carefully
+            curated snippets across multiple technologies, you can instantly
+            find exactly what you need and get back to building without
+            interruptions.
+          </p>
+
+          <CodeLaptop />
+        </div>
+
+        <div className="flex flex-col items-center justify-center md:flex-row flex-wrap gap-10 md:gap-20 lg:gap-40">
+          <div className="scale-75">
+            <CodeMobile />
+          </div>
+
+          <p className="md:w-[30%] text-justify">
+            Built for developers who value speed and accuracy, SnipHub delivers
+            a seamless experience with instant copy functionality, zero
+            dependency on server delays, and consistently reliable syntax.
+            Whether you're working with CLI commands, scripting, or reusable
+            templates, SnipHub keeps everything organized and accessible in one
+            place. Explore, learn, and collaborate as you expand your toolkit
+            and streamline your development process.
+          </p>
+        </div>
+      </div>
 
       {/* Cards */}
-      <Cards theme={theme} />
+      <div className="space-y-16">
+        <SectionTitle
+          title={"Technologies"}
+          description={
+            "Dive into the world of snippets !!! Explore the vast ocean of technologies and see how they work"
+          }
+        />
+
+        <Cards theme={theme} />
+      </div>
     </div>
   );
 };

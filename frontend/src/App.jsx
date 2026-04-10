@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -71,6 +72,8 @@ const App = () => {
           />
         </Routes>
       </div>
+
+      <Footer />
     </>
   );
 };

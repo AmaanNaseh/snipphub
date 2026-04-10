@@ -71,7 +71,7 @@ export default function CodeMobile() {
 
   return (
     <div
-      className="w-full flex justify-center perspective-[2000px]"
+      className="flex justify-center perspective-[2000px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleLeave}
     >

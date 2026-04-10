@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "card-gradient-light": "linear-gradient(to right, #165dfc, #a052ff)",
+        "neon-blue-gradient": "linear-gradient(to right, #165dfc, #a052ff)",
       },
     },
   },
