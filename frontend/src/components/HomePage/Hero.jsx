@@ -15,7 +15,7 @@ const Hero = ({ theme }) => {
     <div className="w-full flex flex-col items-center gap-10">
       <div className="text-center">
         <h1 className="text-[50px] md:text-[80px] font-bold">
-          SNIP
+          SNIPP
           <span className="bg-clip-text text-transparent bg-neon-blue-gradient">
             HUB
           </span>

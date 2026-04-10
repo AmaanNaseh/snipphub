@@ -14,9 +14,9 @@ export default function HeroAnimation({ theme }) {
 
   const buttonRef = useRef(null);
 
-  const titleText = "<SnipHub />";
+  const titleText = "<SnippHub />";
   const descriptionText = "// Your ultimate code snippet library";
-  const fullCode = `const snippets = {\n  name: "SnipHub",\n  description: "Copy. Paste. Use.",\n  features: [\n  "CLI",\n  "Snippets"\n  "Templates\n  "],\n  copy: () =>\n  navigator.clipboard.writeText(code)\n};`;
+  const fullCode = `const snippets = {\n  name: "SnippHub",\n  description: "Copy. Paste. Use.",\n  features: [\n  "CLI",\n  "Snippets"\n  "Templates\n  "],\n  copy: () =>\n  navigator.clipboard.writeText(code)\n};`;
 
   const handleCopy = async () => {
     try {
@@ -162,7 +162,7 @@ export default function HeroAnimation({ theme }) {
       <div className="relative overflow-hidden w-full h-full min-h-[500px] bg-[#0d1117] border border-slate-700 rounded-2xl">
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 bg-slate-800 border-b border-slate-700">
-          <span className="text-sm text-slate-400">SnipHub.js</span>
+          <span className="text-sm text-slate-400">SnippHub.js</span>
 
           <motion.button
             ref={buttonRef}

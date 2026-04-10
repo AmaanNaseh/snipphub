@@ -21,7 +21,7 @@ const HomePage = ({ theme }) => {
 
       <div className="space-y-16">
         <SectionTitle
-          title={"Why SnipHub ?"}
+          title={"Why SnippHub ?"}
           description={
             "Unlike AI, it helps you to memorize commands by copying and updating as per your usecase"
           }
@@ -29,7 +29,7 @@ const HomePage = ({ theme }) => {
 
         <div className="flex flex-col-reverse items-center justify-center md:flex-row flex-wrap gap-10 md:gap-20 lg:gap-40">
           <p className="md:w-[30%] text-justify">
-            Instead of relying on AI every time, SnipHub helps you build muscle
+            Instead of relying on AI every time, SnippHub helps you build muscle
             memory by encouraging you to copy, tweak, and reuse commands
             tailored to your workflow. With a growing library of carefully
             curated snippets across multiple technologies, you can instantly
@@ -46,11 +46,11 @@ const HomePage = ({ theme }) => {
           </div>
 
           <p className="md:w-[30%] text-justify">
-            Built for developers who value speed and accuracy, SnipHub delivers
+            Built for developers who value speed and accuracy, SnippHub delivers
             a seamless experience with instant copy functionality, zero
             dependency on server delays, and consistently reliable syntax.
             Whether you're working with CLI commands, scripting, or reusable
-            templates, SnipHub keeps everything organized and accessible in one
+            templates, SnippHub keeps everything organized and accessible in one
             place. Explore, learn, and collaborate as you expand your toolkit
             and streamline your development process.
           </p>
