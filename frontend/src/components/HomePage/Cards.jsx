@@ -25,7 +25,7 @@ const Cards = ({ theme }) => {
                   className={`p-2 rounded-xl group-hover:scale-105 transition-all duration-100 ${
                     theme === "dark"
                       ? "bg-[#0d1117] text-[#58a6ff] group-hover:bg-[#58a6ff] group-hover:text-black"
-                      : "bg-[#f5f5ff] text-[#165dfc] group-hover:bg-neon-blue-gradient group-hover:text-white"
+                      : "bg-[#f5f5ff] text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white"
                   }`}
                 >
                   <item.techIcon className="text-4xl" />

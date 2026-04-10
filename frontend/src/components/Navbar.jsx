@@ -74,7 +74,7 @@ const Navbar = ({ theme, setTheme }) => {
                   className={`p-2 rounded-xl  ${
                     theme === "dark"
                       ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
-                      : `text-[#165dfc] group-hover:bg-neon-blue-gradient group-hover:text-white ${item.techRoute === location.pathname ? "bg-neon-blue-gradient text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-[80px]" />
@@ -149,7 +149,7 @@ const Navbar = ({ theme, setTheme }) => {
                   className={`p-2 rounded-xl ${
                     theme === "dark"
                       ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
-                      : `text-[#165dfc] group-hover:bg-neon-blue-gradient group-hover:text-white ${item.techRoute === location.pathname ? "bg-neon-blue-gradient text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-lg" />
