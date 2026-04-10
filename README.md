@@ -1,3 +1,3 @@
-# Snipline
+# Snipphub
 
-An all in one platform for copy pasting commands for different technologies
+An all in one platform for copy pasting commands for different tools and technologies.

@@ -56,7 +56,7 @@ const CommandsPage = ({ theme }) => {
             <div className="flex flex-col gap-8">
               <div className="flex items-center gap-4 md:gap-8">
                 <div
-                  className={`p-4 rounded-xl font-bold ${theme === "dark" ? "bg-[#58a6ff] text-white" : "bg-card-gradient-light text-white"}`}
+                  className={`p-4 rounded-xl font-bold ${theme === "dark" ? "bg-[#58a6ff] text-white" : "bg-neon-blue-gradient text-white"}`}
                 >
                   <tech.techIcon className="text-[80px]" />
                 </div>

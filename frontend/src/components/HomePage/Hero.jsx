@@ -16,8 +16,8 @@ const Hero = ({ theme }) => {
       <div className="text-center">
         <h1 className="text-[50px] md:text-[80px] font-bold">
           SNIP
-          <span className="bg-clip-text text-transparent bg-card-gradient-light">
-            LINE
+          <span className="bg-clip-text text-transparent bg-neon-blue-gradient">
+            HUB
           </span>
         </h1>
 
@@ -32,27 +32,27 @@ const Hero = ({ theme }) => {
         {/* Features */}
 
         <div className="flex flex-wrap items-center justify-center gap-8 text-sm md:text-md lg:text-lg font-semibold text-white">
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             {totalCommands} commands
           </p>
 
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             {Commands ? Commands.length : "Loading"} technologies
           </p>
 
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             Ready-Made Snippets
           </p>
 
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             Command Line
           </p>
 
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             Bash Scripting
           </p>
 
-          <p className="bg-card-gradient-light px-2 py-1 rounded">
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             Collaboration
           </p>
         </div>
