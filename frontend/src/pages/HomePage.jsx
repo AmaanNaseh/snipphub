@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { Commands } from "../datasets/Commands";
+
 // Components
 import HeroAnimation from "../components/HomePage/HeroAnimation";
 import Hero from "../components/HomePage/Hero";
-import Cards from "../components/HomePage/Cards";
+import TechCards from "../components/HomePage/TechCards";
 import CodeLaptop from "../components/HomePage/CodeLaptop";
 import CodeMobile from "../components/HomePage/CodeMobile";
 
 import SectionTitle from "../components/SectionTitle";
 
 const HomePage = ({ theme }) => {
+  const uniqueCategories = [
+    ...new Set(Commands.map((item) => item.techCategory)),
+  ].sort((a, b) => a.localeCompare(b));
+
   return (
     <div className="flex flex-col items-center justify-center gap-28">
       {/* Hero Section */}
@@ -66,7 +72,17 @@ const HomePage = ({ theme }) => {
           }
         />
 
-        <Cards theme={theme} />
+        {uniqueCategories.map((category) => (
+          <div
+            key={category}
+            className="flex flex-col items-center justify-center gap-4"
+          >
+            <h1 className="font-bold bg-clip-text text-transparent bg-neon-blue-gradient">
+              {category}
+            </h1>
+            <TechCards theme={theme} techCategory={category} />
+          </div>
+        ))}
       </div>
     </div>
   );

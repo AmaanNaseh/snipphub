@@ -7,12 +7,18 @@ import { Commands } from "../../datasets/Commands";
 // Icons
 import { GoArrowRight } from "react-icons/go";
 
-const Cards = ({ theme }) => {
+const TechCards = ({ theme, techCategory }) => {
+  const uniqueTechCategories = Commands.filter(
+    (item) => item.techCategory === techCategory,
+  ).filter(
+    (item, i, arr) => i === arr.findIndex((t) => t.techName === item.techName),
+  );
+
   return (
     <div className="flex flex-wrap items-center justify-center gap-10">
-      {Commands.map((item, index) => {
+      {uniqueTechCategories.map((item, index) => {
         return (
-          <Link key={index} to={item.techRoute}>
+          <Link key={item.techRoute} to={item.techRoute}>
             <div
               className={`z-20 group p-4 min-w-[200px] max-w-[300px] lg:max-w-[350px] min-h-[150px] rounded-xl flex flex-col gap-4 hover:scale-105 transition-all duration-300 ${
                 theme === "dark"
@@ -51,4 +57,4 @@ const Cards = ({ theme }) => {
   );
 };
 
-export default Cards;
+export default TechCards;
