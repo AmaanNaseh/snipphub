@@ -17,6 +17,7 @@ export const Commands = [
     techIcon: FaLinux,
     techDescription:
       "Linux is an operating system that uses CLI for most of its task. The commands used here are valid for Ubuntu and other distributions as well.",
+    techCategory: "Operating System",
     commands: [
       // Shortcuts
       {
@@ -290,6 +291,7 @@ export const Commands = [
     techIcon: FaGithub,
     techDescription:
       "Github is an open source platform to push codes into repositories. It uses a version control system k/a Git to track changes in code.",
+    techCategory: "Collaboration Tools",
     commands: [
       // Installation
       {
@@ -584,6 +586,7 @@ export const Commands = [
     techIcon: FaDocker,
     techDescription:
       "Docker is an open source tool for containerization of software and dependencies for cross-platform support.",
+    techCategory: "Devops",
     commands: [
       // Installation
       {
@@ -704,6 +707,7 @@ export const Commands = [
     techIcon: SiMysql,
     techDescription:
       "SQL is a programming language used for databases. MySQL is a software that creates databases based on SQL queries.",
+    techCategory: "Programming Language",
     commands: [
       // Installation
       {
@@ -1310,6 +1314,7 @@ export const Commands = [
     techIcon: BiLogoPostgresql,
     techDescription:
       "SQL is a programming language used for databases. PostgreSQL is a software that creates databases based on SQL queries.",
+    techCategory: "Programming Language",
     commands: [
       // Installation
       {
@@ -1540,6 +1545,7 @@ export const Commands = [
     techIcon: FaNodeJs,
     techDescription:
       "Node.js is a runtime environment for Javascript. It allows backend as well as frontend development in our local machines.",
+    techCategory: "Backend Web Development",
     commands: [
       {
         cmdTitle: "Update packages in Linux",
@@ -1824,6 +1830,7 @@ export const deleteEmp = async (req, res) => {
     techIcon: DiRedis,
     techDescription:
       "Redis is in-memory database i.e. used for caching out information..",
+    techCategory: "Backend Web Development",
     commands: [
       // Installation
       {
@@ -2081,6 +2088,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
     techIcon: FaReadme,
     techDescription:
       "Markup files are special type of text whiles which are used to write formatted text. It is similar to HTML and we can use HTMl tags here too.",
+    techCategory: "Collaboration Tools",
     commands: [
       // Syntax
       {

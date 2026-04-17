@@ -242,8 +242,12 @@ const CommandsPage = ({ theme }) => {
                     ? tech.commands
                         .filter(
                           (item) =>
-                            item.cmdTitle.includes(searchText) ||
-                            item.cmd.includes(searchText),
+                            item.cmdTitle
+                              .toLowerCase()
+                              .includes(searchText.toLowerCase()) ||
+                            item.cmd
+                              .toLowerCase()
+                              .includes(searchText.toLowerCase()),
                         )
                         .map((item, index) => {
                           return (
@@ -290,7 +294,9 @@ const CommandsPage = ({ theme }) => {
                         .filter(
                           (item) =>
                             item.cmdCategory === filter &&
-                            item.cmdTitle.includes(searchText),
+                            item.cmdTitle
+                              .toLowerCase()
+                              .includes(searchText.toLowerCase()),
                         )
                         .map((item, index) => {
                           return (
