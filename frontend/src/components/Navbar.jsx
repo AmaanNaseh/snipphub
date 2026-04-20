@@ -53,7 +53,16 @@ const Navbar = ({ theme, setTheme }) => {
             {isTechnologies ? <FaAngleUp /> : <FaAngleDown />}
           </span>
         </li>
+
+        <Link to={"/api"}>
+          <li
+            className={`hover:scale-105 hover:underline transition-all duration-300 ${theme === "dark" ? "text-white" : "text-black"}`}
+          >
+            API
+          </li>
+        </Link>
       </ul>
+
       {/* Large Screens Technologies */}
       {isTechnologies && (
         <div
@@ -63,7 +72,7 @@ const Navbar = ({ theme, setTheme }) => {
           {Commands.map((item, index) => {
             return (
               <Link
-                to={item.techRoute}
+                to={`/commands${item.techRoute}`}
                 key={index}
                 className="flex items-center gap-8 font-bold group hover:scale-105 transition-all duration-100"
                 onClick={() => {
@@ -73,8 +82,8 @@ const Navbar = ({ theme, setTheme }) => {
                 <div
                   className={`p-2 rounded-xl  ${
                     theme === "dark"
-                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
-                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
+                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname.split("commands")[1] ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname.split("commands")[1] ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-[80px]" />
@@ -129,6 +138,7 @@ const Navbar = ({ theme, setTheme }) => {
           }}
         />
       )}
+
       {isSideNav ? (
         <div
           className={`lg:hidden z-50 fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 border-y-[1px] border-y-gray-300/25 ${
@@ -138,7 +148,7 @@ const Navbar = ({ theme, setTheme }) => {
           {Commands.map((item, index) => {
             return (
               <Link
-                to={item.techRoute}
+                to={`/commands${item.techRoute}`}
                 key={index}
                 className="group hover:scale-105 transition-all duration-100 flex items-center gap-2"
                 onClick={() => {
@@ -148,8 +158,8 @@ const Navbar = ({ theme, setTheme }) => {
                 <div
                   className={`p-2 rounded-xl ${
                     theme === "dark"
-                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
-                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
+                      ? `text-[#000] group-hover:bg-[#58a6ff] group-hover:text-white ${item.techRoute === location.pathname.split("commands")[1] ? "bg-[#58a6ff] text-white" : "bg-[#f5f5ff]"}`
+                      : `text-[#165dfc] group-hover:bg-[#165dfc] group-hover:text-white ${item.techRoute === location.pathname.split("commands")[1] ? "bg-[#165dfc] text-white" : "bg-[#f5f5ff]"}`
                   }`}
                 >
                   <item.techIcon className="text-lg" />

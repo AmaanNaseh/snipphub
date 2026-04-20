@@ -18,7 +18,7 @@ const TechCards = ({ theme, techCategory }) => {
     <div className="flex flex-wrap items-center justify-center gap-10">
       {uniqueTechCategories.map((item, index) => {
         return (
-          <Link key={item.techRoute} to={item.techRoute}>
+          <Link key={item.techRoute} to={`/commands${item.techRoute}`}>
             <div
               className={`z-20 group p-4 min-w-[200px] max-w-[300px] lg:max-w-[350px] min-h-[150px] rounded-xl flex flex-col gap-4 hover:scale-105 transition-all duration-300 ${
                 theme === "dark"

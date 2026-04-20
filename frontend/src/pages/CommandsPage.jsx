@@ -30,11 +30,11 @@ const CommandsPage = ({ theme }) => {
 
   // To use url for fetching current tech info
   const location = useLocation();
-  const currentLocation = location.pathname.split("commands/")[1];
+  const currentLocation = location.pathname.split("commands")[1];
 
   useEffect(() => {
     const filtered = Commands.find(
-      (item) => item.techRoute.split("commands/")[1] === currentLocation,
+      (item) => item.techRoute === currentLocation,
     );
 
     setTech(filtered || null);
@@ -47,7 +47,7 @@ const CommandsPage = ({ theme }) => {
 
   const clearSearchQuery = () => {
     if (searchedCmdId !== null) {
-      navigate(`/commands/${currentLocation}`);
+      navigate(`/commands${currentLocation}`);
     }
   };
 
@@ -264,14 +264,14 @@ const CommandsPage = ({ theme }) => {
                         onClick={() => {
                           handleCopy(item.cmd);
                         }}
-                        className="text-2xl hover:scale-110 transition-all duration-300 cursor-pointer absolute right-1 top-1"
+                        className="text-2xl hover:scale-110 transition-all duration-300 text-white cursor-pointer absolute right-1 top-1"
                       />
                     </div>
                     <button
                       onClick={() => {
                         setIsShareModalOpened(true);
                         setUrlToShare(
-                          `${frontendAPI}${tech.techRoute}?cmdId=${item.cmdId}`,
+                          `${frontendAPI}/commands${tech.techRoute}?cmdId=${item.cmdId}`,
                         );
                       }}
                       className="w-fit p-2 rounded text-white bg-blue-600 hover:bg-blue-500 flex items-center justify-center gap-2"
