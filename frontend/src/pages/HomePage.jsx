@@ -25,7 +25,7 @@ const HomePage = ({ theme }) => {
         <Hero theme={theme} />
       </div>
 
-      <div className="space-y-16">
+      <div className="space-y-16 w-full">
         <SectionTitle
           title={"Why SnippHub ?"}
           description={
@@ -63,8 +63,19 @@ const HomePage = ({ theme }) => {
         </div>
       </div>
 
+      {/* API Section */}
+      <div className="space-y-16 w-full">
+        <SectionTitle
+          title={"Free SnippHub API"}
+          description={
+            "SnippHub provides free API through which you can fetch commands for your system"
+          }
+        />
+        IMAGE SLIDER & API BUTTON
+      </div>
+
       {/* Cards */}
-      <div className="space-y-16">
+      <div className="space-y-16 w-full">
         <SectionTitle
           title={"Technologies"}
           description={

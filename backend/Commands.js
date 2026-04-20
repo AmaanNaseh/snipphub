@@ -1,20 +1,8 @@
-import {
-  FaLinux,
-  FaGithub,
-  FaDocker,
-  FaNodeJs,
-  FaReadme,
-} from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { DiRedis } from "react-icons/di";
-
 export const Commands = [
   // Linux
   {
     techRoute: "/linux",
     techName: "Linux",
-    techIcon: FaLinux,
     techDescription:
       "Linux is an operating system that uses CLI for most of its task. The commands used here are valid for Ubuntu and other distributions as well.",
     techCategory: "Operating System",
@@ -322,7 +310,6 @@ export const Commands = [
   {
     techRoute: "/github",
     techName: "Github",
-    techIcon: FaGithub,
     techDescription:
       "Github is an open source platform to push codes into repositories. It uses a version control system k/a Git to track changes in code.",
     techCategory: "Collaboration Tools",
@@ -653,7 +640,6 @@ export const Commands = [
   {
     techRoute: "/docker",
     techName: "Docker",
-    techIcon: FaDocker,
     techDescription:
       "Docker is an open source tool for containerization of software and dependencies for cross-platform support.",
     techCategory: "Devops",
@@ -787,7 +773,6 @@ export const Commands = [
   {
     techRoute: "/mysql",
     techName: "MySQL",
-    techIcon: SiMysql,
     techDescription:
       "SQL is a programming language used for databases. MySQL is a software that creates databases based on SQL queries.",
     techCategory: "Programming Language",
@@ -1469,7 +1454,6 @@ export const Commands = [
   {
     techRoute: "/postgresql",
     techName: "PostgreSQL",
-    techIcon: BiLogoPostgresql,
     techDescription:
       "SQL is a programming language used for databases. PostgreSQL is a software that creates databases based on SQL queries.",
     techCategory: "Programming Language",
@@ -1727,7 +1711,6 @@ export const Commands = [
   {
     techRoute: "/nodejs",
     techName: "Node.js",
-    techIcon: FaNodeJs,
     techDescription:
       "Node.js is a runtime environment for Javascript. It allows backend as well as frontend development in our local machines.",
     techCategory: "Backend Web Development",
@@ -2027,7 +2010,6 @@ export const deleteEmp = async (req, res) => {
   {
     techRoute: "/redis",
     techName: "Redis",
-    techIcon: DiRedis,
     techDescription:
       "Redis is in-memory database i.e. used for caching out information..",
     techCategory: "Backend Web Development",
@@ -2262,20 +2244,20 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
           "It configures caching in GET api/controller so that next time cache will be directly used.",
         cmdCategory: "Redis and Node.js",
         cmd: `const getFunction = async (req, res) => {
-	const key = generateCacheKey(req);
-	
-	// Checking if cached data found or not
-	const cachedData = await client.get(key);
-	if (cachedData) {
-		console.log("Cache hit");
-		return res.json(JSON.parse(cachedData));
-	}
-	
-	// Caching if data not available
-	console.log("Cache miss");
-	const items = ModelName.find();
-	await client.set(key, JSON.stringify(items));
-	// value is our desirable array of objects
+    const key = generateCacheKey(req);
+    
+    // Checking if cached data found or not
+    const cachedData = await client.get(key);
+    if (cachedData) {
+        console.log("Cache hit");
+        return res.json(JSON.parse(cachedData));
+    }
+    
+    // Caching if data not available
+    console.log("Cache miss");
+    const items = ModelName.find();
+    await client.set(key, JSON.stringify(items));
+    // value is our desirable array of objects
   // res.json code
 }`,
       },
@@ -2298,10 +2280,10 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
           "It handles cache invalidation to delete outdated cached data in UPDATE/PUT api/controller so that next time fresh caching will be done in GET api call.",
         cmdCategory: "Redis and Node.js",
         cmd: `const updateFunction = async (req, res) => {
-	const listCachedKey = 'api:name*'; // e.g. api:products 
-	const keys = await client.keys(listCachedKey);
-	if (keys.length>0) await client.del(keys);
-	// res.json code
+    const listCachedKey = 'api:name*'; // e.g. api:products 
+    const keys = await client.keys(listCachedKey);
+    if (keys.length>0) await client.del(keys);
+    // res.json code
 }`,
       },
     ],
@@ -2311,7 +2293,6 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
   {
     techRoute: "/markupfiles",
     techName: "Markup Files",
-    techIcon: FaReadme,
     techDescription:
       "Markup files are special type of text whiles which are used to write formatted text. It is similar to HTML and we can use HTMl tags here too.",
     techCategory: "Collaboration Tools",

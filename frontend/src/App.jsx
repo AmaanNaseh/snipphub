@@ -6,12 +6,13 @@ import { ToastContainer } from "react-toastify";
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import DarkBg from "./components/Themes/DarkBg";
+import LightBg from "./components/Themes/LightBg";
 
 // Pages
 import HomePage from "./pages/HomePage";
 import CommandsPage from "./pages/CommandsPage";
-import DarkBg from "./components/Themes/DarkBg";
-import LightBg from "./components/Themes/LightBg";
+import API from "./pages/API";
 
 const App = () => {
   const [theme, setTheme] = useState(null); // light, dark
@@ -70,6 +71,7 @@ const App = () => {
             path="/commands/:id"
             element={<CommandsPage theme={theme} />}
           />
+          <Route path="/api" element={<API theme={theme} />} />
         </Routes>
       </div>
 
