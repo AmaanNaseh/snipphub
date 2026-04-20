@@ -66,7 +66,7 @@ const Navbar = ({ theme, setTheme }) => {
       {/* Large Screens Technologies */}
       {isTechnologies && (
         <div
-          className={`hidden z-50 lg:flex fixed top-[80px] left-0 w-full h-fit p-20 items-center justify-start gap-40 flex-wrap border-y-[1px] border-y-gray-300/25 
+          className={`hidden z-50 overflow-auto lg:flex fixed top-[80px] left-0 w-full h-fit p-20 items-center justify-start gap-40 flex-wrap border-y-[1px] border-y-gray-300/25 
             ${theme === "dark" ? "bg-[#0d1117]" : "bg-white"}`}
         >
           {Commands.map((item, index) => {
@@ -141,7 +141,7 @@ const Navbar = ({ theme, setTheme }) => {
 
       {isSideNav ? (
         <div
-          className={`lg:hidden z-50 fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 border-y-[1px] border-y-gray-300/25 ${
+          className={`lg:hidden z-50 overflow-auto fixed top-[80px] left-0 w-full h-fit flex flex-col gap-4 p-8 border-y-[1px] border-y-gray-300/25 ${
             theme === "dark" ? "bg-[#0d1117]" : "bg-white"
           }`}
         >
