@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 // Datasets
 import { Commands } from "../datasets/Commands";
-import { frontendAPI } from "../../../config";
+import { frontendAPI } from "../config/config";
 
 // Icons
 import { IoIosArrowBack, IoIosSend } from "react-icons/io";
