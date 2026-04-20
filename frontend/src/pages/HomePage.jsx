@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import { Commands } from "../datasets/Commands";
 
+// Assets
+import api_interface from "../assets/api_interface.png";
+
 // Components
 import HeroAnimation from "../components/HomePage/HeroAnimation";
 import Hero from "../components/HomePage/Hero";
@@ -68,10 +71,23 @@ const HomePage = ({ theme }) => {
         <SectionTitle
           title={"Free SnippHub API"}
           description={
-            "SnippHub provides free API through which you can fetch commands for your system"
+            "SnippHub provides free API through which you can fetch commands and integrate it with your system"
           }
         />
-        IMAGE SLIDER & API BUTTON
+
+        <div className="flex flex-col items-center justify-center gap-8">
+          <Link to={"/api"}>
+            <button className="bg-neon-blue-gradient px-8 py-4 text-lg md:text-xl text-white font-bold rounded hover:scale-105 transition-all duration-300">
+              Generate your Free API Now
+            </button>
+          </Link>
+
+          <img
+            src={api_interface}
+            alt="API Interface"
+            className="w-full h-full min-h-[200px]"
+          />
+        </div>
       </div>
 
       {/* Cards */}

@@ -184,11 +184,11 @@ const API = ({ theme }) => {
 
             <div className="relative">
               <pre className="text-md md:text-lg lg:text-xl w-full bg-[#0d1117] text-white rounded p-4 overflow-x-auto">
-                {generatedAPI}
+                GET {generatedAPI}
               </pre>
               <IoCopyOutline
                 onClick={() => {
-                  handleCopy(generatedAPI);
+                  handleCopy(`GET ${generatedAPI}`);
                 }}
                 className="text-2xl hover:scale-110 transition-all duration-300 text-white cursor-pointer absolute right-1 top-1"
               />
