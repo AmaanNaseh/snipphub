@@ -21,6 +21,7 @@ export const Commands = [
     commands: [
       // Shortcuts
       {
+        cmdId: 1,
         cmdTitle: "Open terminal",
         cmdDescription:
           "It opens terminal from anywhere as root (Keyboard based).",
@@ -29,6 +30,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Copy",
         cmdDescription: "It copies selected text (Keyboard based).",
         cmdCategory: "Shortcuts",
@@ -36,6 +38,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 3,
         cmdTitle: "Paste",
         cmdDescription: "It pastes selected text (Keyboard based).",
         cmdCategory: "Shortcuts",
@@ -43,6 +46,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 4,
         cmdTitle: "Zoom in",
         cmdDescription: "It zoomes into CLI (Keyboard based).",
         cmdCategory: "Shortcuts",
@@ -50,6 +54,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Zoom out",
         cmdDescription: "It zoomes out from CLI (Keyboard based).",
         cmdCategory: "Shortcuts",
@@ -58,6 +63,7 @@ export const Commands = [
 
       // File Handling
       {
+        cmdId: 6,
         cmdTitle: "List",
         cmdDescription: "Displays all items in current location.",
         cmdCategory: "File Handling",
@@ -65,6 +71,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 7,
         cmdTitle: "List including hidden",
         cmdDescription:
           "Displays all items in current location including hidden items.",
@@ -73,6 +80,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 8,
         cmdTitle: "List recursively including children items",
         cmdDescription:
           "Displays all files and folders in current location as well as of children folders.",
@@ -81,6 +89,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle: "Print/Present Working Directory",
         cmdDescription: "Displays current working directory.",
         cmdCategory: "File Handling",
@@ -88,6 +97,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 10,
         cmdTitle: "Change Directory",
         cmdDescription: "It changes current location to pasted location.",
         cmdCategory: "File Handling",
@@ -95,6 +105,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle: "Make Directory",
         cmdDescription: "It creates a folder in current location.",
         cmdCategory: "File Handling",
@@ -102,6 +113,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 12,
         cmdTitle: "Remove Directory",
         cmdDescription: "It deletes the mentioned folder.",
         cmdCategory: "File Handling",
@@ -109,6 +121,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 13,
         cmdTitle: "Create file",
         cmdDescription: "It creates a file in current location.",
         cmdCategory: "File Handling",
@@ -116,6 +129,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 14,
         cmdTitle: "Move",
         cmdDescription:
           "It moves a file/folder from source to destination location.",
@@ -124,6 +138,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 15,
         cmdTitle: "Copy",
         cmdDescription:
           "It moves a file/folder from source to destination location.",
@@ -132,6 +147,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 16,
         cmdTitle: "Open a file in default text editor",
         cmdDescription: "It opens a file in default text editor i.e. notepad.",
         cmdCategory: "File Handling",
@@ -139,6 +155,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 17,
         cmdTitle: "Open a file in VS Code",
         cmdDescription: "It opens a file in VS Code.",
         cmdCategory: "File Handling",
@@ -147,6 +164,7 @@ export const Commands = [
 
       // Permission Handling
       {
+        cmdId: 18,
         cmdTitle: "List permissions",
         cmdDescription:
           "Displays R/W/X permissions as user/owner, group and others/public.",
@@ -155,6 +173,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 19,
         cmdTitle: "Change ownership permissions",
         cmdDescription:
           "Changes ownership permissions based on 3 digit binary equivalent.",
@@ -163,6 +182,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 20,
         cmdTitle: "Change group permissions",
         cmdDescription:
           "Changes group permissions based on 3 digit binary equivalent.",
@@ -172,6 +192,7 @@ export const Commands = [
 
       // Terminal Handling
       {
+        cmdId: 21,
         cmdTitle: "Clear the terminal",
         cmdDescription: "It clears the terminal to make it look clean.",
         cmdCategory: "Terminal Handling",
@@ -179,6 +200,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 22,
         cmdTitle: "History of recent commands",
         cmdDescription: "It gives history of commands used in that session.",
         cmdCategory: "Terminal Handling",
@@ -186,6 +208,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 23,
         cmdTitle: "Printing text in terminal",
         cmdDescription: "It prints the text in terminal.",
         cmdCategory: "Terminal Handling",
@@ -194,6 +217,7 @@ export const Commands = [
 
       // OS Handling
       {
+        cmdId: 24,
         cmdTitle: "Current running processes",
         cmdDescription:
           "Displays all currently running processes (Press Q to exit).",
@@ -202,6 +226,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 25,
         cmdTitle: "Background processes",
         cmdDescription: "Displays all background processes (Press Q to exit).",
         cmdCategory: "OS Handling",
@@ -209,6 +234,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 26,
         cmdTitle: "Resource consumption info",
         cmdDescription:
           "Displays resource intensive processes running currently (Press Q to exit).",
@@ -217,6 +243,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 27,
         cmdTitle: "Terminate a process",
         cmdDescription:
           "Terminates process by process Id obtained by command 'top' (Press Q to exit).",
@@ -226,6 +253,7 @@ export const Commands = [
 
       // Installation
       {
+        cmdId: 28,
         cmdTitle: "Update packages",
         cmdDescription:
           "It updates the built-in packages (pc password needed)..",
@@ -234,6 +262,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 29,
         cmdTitle: "Upgrade app versions",
         cmdDescription: "It upgrades the apps (pc password needed)..",
         cmdCategory: "Installation",
@@ -241,6 +270,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 30,
         cmdTitle: "Install any software",
         cmdDescription:
           "It install the app directly without .deb file (pc password needed)..",
@@ -250,6 +280,7 @@ export const Commands = [
 
       // Vim
       {
+        cmdId: 31,
         cmdTitle: "Vim Installation",
         cmdDescription:
           "It installs Vim (CLI based text editor) without .deb file (pc password needed)..",
@@ -258,6 +289,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 32,
         cmdTitle: "Open file in Vim",
         cmdDescription:
           "It opens file in Vim CLI. Press I to start insertion and Escape when done. Erase unnecessary ~ .",
@@ -266,6 +298,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 33,
         cmdTitle: "Save and Quit Vim",
         cmdDescription: "It quits the file with saved changes.",
         cmdCategory: "Vim",
@@ -273,6 +306,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 34,
         cmdTitle: "Quit without saving",
         cmdDescription:
           "It quits the file without saving changes so that mistakes don't overwrite file.",
@@ -295,6 +329,7 @@ export const Commands = [
     commands: [
       // Installation
       {
+        cmdId: 1,
         cmdTitle: "Install git (Linux)",
         cmdDescription: "It install git in Linux.",
         cmdCategory: "Installation",
@@ -302,6 +337,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Check git version",
         cmdDescription:
           "It checks git version, can be used to verify git installed or not.",
@@ -311,6 +347,7 @@ export const Commands = [
 
       // Configuration
       {
+        cmdId: 3,
         cmdTitle: "Username configuration (one time only)",
         cmdDescription: "It configures user globally for all git projects.",
         cmdCategory: "Configuration",
@@ -318,6 +355,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 4,
         cmdTitle: "Email configuration (one time only)",
         cmdDescription: "It configures user globally for all git projects.",
         cmdCategory: "Configuration",
@@ -325,6 +363,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Configured users",
         cmdDescription: "Displays all configured users.",
         cmdCategory: "Configuration",
@@ -333,6 +372,7 @@ export const Commands = [
 
       // New Project Setup
       {
+        cmdId: 6,
         cmdTitle: "Clone the repository",
         cmdDescription:
           "It clones the repository as a folder in current location.",
@@ -341,6 +381,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 7,
         cmdTitle: "Initialize local git project",
         cmdDescription:
           "Initialize empty github repository locally in current folder.",
@@ -349,6 +390,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 8,
         cmdTitle: "Code status",
         cmdDescription:
           "It tells 4 types of status of code: Untracked, Modified, Staged, Unmodified.",
@@ -357,6 +399,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle: "Connecting to remote repository in Github",
         cmdDescription:
           "It connects local repository to remote repository in Github to upload code.",
@@ -365,6 +408,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 10,
         cmdTitle: "Verify remote repository connection",
         cmdDescription:
           "It verifies established connection between local and added remote.",
@@ -373,6 +417,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle: "Adds 1 file to stage",
         cmdDescription:
           "It adds modified file to stage so that it becomes staged file for commit.",
@@ -381,6 +426,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 12,
         cmdTitle: "Add all files to stage",
         cmdDescription:
           "It adds all modified files to stage so that it becomes staged file for commit.",
@@ -389,6 +435,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 13,
         cmdTitle: "Commit files from stage to branch",
         cmdDescription:
           "It commits the staged file to branch to clean and finalize the changes.",
@@ -397,6 +444,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 14,
         cmdTitle: "Commits history",
         cmdDescription: "Displays all the commits on that branch.",
         cmdCategory: "New Project Setup",
@@ -404,6 +452,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 15,
         cmdTitle: "Rename master branch to main",
         cmdDescription:
           "It renames branch name to main as a standardized approach.",
@@ -412,6 +461,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 16,
         cmdTitle: "Push code to Github",
         cmdDescription:
           "It uploads code to Github so that remote and local are synced w.r.t. commits.",
@@ -421,6 +471,7 @@ export const Commands = [
 
       // Branching
       {
+        cmdId: 17,
         cmdTitle: "Check current branch",
         cmdDescription: "Displays current branch name.",
         cmdCategory: "Branching",
@@ -428,6 +479,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 18,
         cmdTitle: "Rename branch",
         cmdDescription: "Renames the current branch name to given branch name.",
         cmdCategory: "Branching",
@@ -435,6 +487,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 19,
         cmdTitle: "Create new branch",
         cmdDescription: "Creates a new branch.",
         cmdCategory: "Branching",
@@ -442,6 +495,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 20,
         cmdTitle: "To move to other branch",
         cmdDescription: "Displays current branch name.",
         cmdCategory: "Branching",
@@ -449,6 +503,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 21,
         cmdTitle: "Delete an existing branch",
         cmdDescription: "Deletes the mentioned branch.",
         cmdCategory: "Branching",
@@ -456,6 +511,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 22,
         cmdTitle: "Compare branches",
         cmdDescription:
           "Compares current branch with other branch w.r.t. commits.",
@@ -464,6 +520,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 23,
         cmdTitle: "Push code to Github",
         cmdDescription: "It uploads code to the mentioned branch in Github.",
         cmdCategory: "Branching",
@@ -471,6 +528,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 24,
         cmdTitle: "Push code to Github as upstream (one time only)",
         cmdDescription:
           "It uploads code to Github as well as set upstream so that next time origin branch name won't be needed.",
@@ -479,6 +537,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 25,
         cmdTitle: "Merging branches",
         cmdDescription:
           "It merges current branch with other branch usually main.",
@@ -487,6 +546,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 26,
         cmdTitle: "Pull accepted changes locally",
         cmdDescription:
           "After PR is accepted, this command is used to reflect changes locally.",
@@ -495,6 +555,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 27,
         cmdTitle: "To cut all the changes in given branch",
         cmdDescription:
           "It is used to cut all the changes done in a branch so that it can be pasted in other branch.",
@@ -503,6 +564,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 28,
         cmdTitle:
           "To paste all the changes in given branch from a stashed branch",
         cmdDescription:
@@ -513,6 +575,7 @@ export const Commands = [
 
       // Reverting Changes
       {
+        cmdId: 29,
         cmdTitle: "Resetting 1 staged file",
         cmdDescription:
           "Resets file from stage and move it back to modified state.",
@@ -521,6 +584,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 30,
         cmdTitle: "Resetting all staged files",
         cmdDescription: "Resets all files from stage to modified state.",
         cmdCategory: "Reverting Changes",
@@ -528,6 +592,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 31,
         cmdTitle: "Resetting 1 committed file",
         cmdDescription: "Resets file from committed to staged state.",
         cmdCategory: "Reverting Changes",
@@ -535,6 +600,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 32,
         cmdTitle: "Resetting directly to a commit",
         cmdDescription:
           "Resets many files file from committed to staged state of any earlier commit based on its id.",
@@ -544,6 +610,7 @@ export const Commands = [
 
       // Multi-Accounts Handling
       {
+        cmdId: 33,
         cmdTitle: "Generate SSH key (one time only)",
         cmdDescription:
           "Generates public and private SSH keys using ed25519 algorithm for a PC to connect that PC to Github.",
@@ -552,6 +619,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 34,
         cmdTitle: "Check public SSH key",
         cmdDescription:
           "Displays public SSH key to copy and paste in Github settings SSH key Authorization section.",
@@ -560,6 +628,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 35,
         cmdTitle: "Connecting to remote repository in Github",
         cmdDescription:
           "It connects local repository to remote repository in Github to upload code.",
@@ -568,6 +637,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 36,
         cmdTitle: "Connect remotely added repo through SSH",
         cmdDescription:
           "After adding remote to origin by git remote add origin link, this command is used to configure SSH based account for that project folder.",
@@ -590,6 +660,7 @@ export const Commands = [
     commands: [
       // Installation
       {
+        cmdId: 1,
         cmdTitle: "Install Docker (Linux)",
         cmdDescription: "It installs Docker in Linux.",
         cmdCategory: "Installation",
@@ -597,6 +668,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Install Docker Desktop (Linux)",
         cmdDescription:
           "It installs Docker Desktop in Linux after installing docker as bash file. Install .deb package from website and run following commands:",
@@ -606,6 +678,7 @@ export const Commands = [
 
       // Containers and Images
       {
+        cmdId: 3,
         cmdTitle: "To check docker version (Docker CLI)",
         cmdDescription:
           "It displays version of docker. Make sure docker desktop is opened.",
@@ -614,6 +687,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 4,
         cmdTitle: "To open docker desktop to use CLI (Docker CLI)",
         cmdDescription:
           "It opens docker desktop so that CLI commands can be executed. It can be manually opened too.",
@@ -622,6 +696,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "To close docker desktop (Docker CLI)",
         cmdDescription:
           "It closes docker desktop usually done at end of usage. It can be manually closed too.",
@@ -630,6 +705,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 6,
         cmdTitle: "To see all running containers (Docker CLI)",
         cmdDescription:
           "It displays all running containers. Make sure docker desktop is opened.",
@@ -638,6 +714,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 7,
         cmdTitle: "To pull a docker image (Docker CLI, one time only)",
         cmdDescription:
           "It pulls docker image from docker hub to docker desktop locally for making containers. Make sure docker desktop is opened.",
@@ -646,6 +723,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 8,
         cmdTitle:
           "To build a container from docker image (Docker CLI, one time only)",
         cmdDescription:
@@ -655,6 +733,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle:
           "To use a container in interactive mode (Docker CLI, one time only)",
         cmdDescription:
@@ -664,6 +743,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 10,
         cmdTitle: "To use already downloaded image (Docker CLI)",
         cmdDescription:
           "It runs an image/container that is pulled earlier. Make sure docker desktop is opened.",
@@ -672,6 +752,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle:
           "To use already downloaded image in interactive mode (Docker CLI)",
         cmdDescription:
@@ -681,6 +762,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 12,
         cmdTitle: "To stop already downloaded image under use (Docker CLI)",
         cmdDescription:
           "It stops the image/container that is under use. Make sure docker desktop is opened.",
@@ -689,6 +771,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 13,
         cmdTitle: "To stop a running container (Docker CLI)",
         cmdDescription:
           "It stops the running container, id or name anything can be used (view by docker ps). Make sure docker desktop is opened.",
@@ -711,6 +794,7 @@ export const Commands = [
     commands: [
       // Installation
       {
+        cmdId: 1,
         cmdTitle: "Update packages in Linux",
         cmdDescription:
           "It updates the built-in packages (pc password needed).",
@@ -719,6 +803,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Install MySQL server (Linux)",
         cmdDescription:
           "It installs the MySQL server i.e. used for CLI based SQL queries.",
@@ -727,6 +812,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 3,
         cmdTitle: "Check status of MySQL server",
         cmdDescription:
           "It checks status of MySQL Server whether active or needs to enable.",
@@ -735,6 +821,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 4,
         cmdTitle: "Enable MySQL server",
         cmdDescription: "It activates/enables MySQL server.",
         cmdCategory: "Installation",
@@ -742,6 +829,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Install MySQL workbench (Linux)",
         cmdDescription:
           "It installs MySQL workbench i.e. a GUI based SQL code editor for visualization.",
@@ -751,6 +839,7 @@ export const Commands = [
 
       // Configuration
       {
+        cmdId: 6,
         cmdTitle: "Initialize configuration (one time only)",
         cmdDescription:
           "It initializes MySQL server configuration. Press n in every question asked accept Reload privilage tables now, there press y and Enter.",
@@ -759,6 +848,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 7,
         cmdTitle: "Open MySQL server in CLI (before password configuration)",
         cmdDescription:
           "It opens an instance of MySQL server in CLI (without password in 1st time so we can configure). Type exit; to exit the MySQL server instance in CLI.",
@@ -767,6 +857,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 8,
         cmdTitle: "Change MySQL server password (one time only)",
         cmdDescription: "SQL command to set password for the first time.",
         cmdCategory: "Configuration",
@@ -774,6 +865,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle: "Open MySQL server in CLI (after password configuration)",
         cmdDescription:
           "It opens an instance of MySQL server in CLI. Type exit; to exit the MySQL server instance in CLI (MySQL root password needed). Use as usual SQL from CLI.",
@@ -783,6 +875,7 @@ export const Commands = [
 
       // Database
       {
+        cmdId: 10,
         cmdTitle: "To create a new database",
         cmdDescription:
           "It creates a new database that can be accessed from any SQL file within that connection.",
@@ -791,6 +884,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle: "To permanently delete database",
         cmdDescription: "It permanently deletes the database.",
         cmdCategory: "Database",
@@ -798,6 +892,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 12,
         cmdTitle: "To view all databases",
         cmdDescription:
           "Displays all the databases including default of databases of SQL.",
@@ -806,6 +901,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 13,
         cmdTitle: "To select a database for use",
         cmdDescription:
           "Selects a database to use in all queries in all files for the root connection.",
@@ -815,6 +911,7 @@ export const Commands = [
 
       // Table
       {
+        cmdId: 14,
         cmdTitle: "To create a table in selected database",
         cmdDescription:
           "Creates a table in the selected database by USE dbName; For many columns, they are separated by , except last column in the schema.",
@@ -823,6 +920,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 15,
         cmdTitle: "To permanently delete table",
         cmdDescription: "It permanently deletes the table.",
         cmdCategory: "Table",
@@ -830,6 +928,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 16,
         cmdTitle: "To insert data into table of selected database",
         cmdDescription:
           "It inserts data in table, use NULL if no values to insert in that place. Column names list need not to be same as schema but values inserted based on this list only.",
@@ -838,6 +937,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 17,
         cmdTitle: "To view all tables of selected database",
         cmdDescription: "Displays all the tables of selected databases.",
         cmdCategory: "Table",
@@ -845,6 +945,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 18,
         cmdTitle: "To view full table",
         cmdDescription: "Displays all the rows and columns of a table.",
         cmdCategory: "Table",
@@ -852,6 +953,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 19,
         cmdTitle: "To view selected columns of table",
         cmdDescription: "Displays all the rows of selected columns of a table.",
         cmdCategory: "Table",
@@ -859,6 +961,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 20,
         cmdTitle: "To allow updation/deletion in table",
         cmdDescription:
           "Disables safe update mode to allow updation/deletion in the database.",
@@ -867,6 +970,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 21,
         cmdTitle: "To update data in table",
         cmdDescription:
           "Updates value of an item in the table. Row is selected by WHERE condition and item to update by colName.",
@@ -875,6 +979,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 22,
         cmdTitle: "To delete data in table",
         cmdDescription:
           "Deletes value of an item in the table w.r.t. WHERE condition to select rows to delete.",
@@ -883,6 +988,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 23,
         cmdTitle: "To delete full table",
         cmdDescription: "It deletes full table like DROP TABLE tableName.",
         cmdCategory: "Table",
@@ -890,6 +996,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 24,
         cmdTitle: "To delete only data of table",
         cmdDescription:
           "It deletes only the data of table not the table itself.",
@@ -898,6 +1005,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 25,
         cmdTitle: "To add column in table schema",
         cmdDescription:
           "It is used to add a column in schema after creation of table.",
@@ -906,6 +1014,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 26,
         cmdTitle: "To delete a column in a table",
         cmdDescription: "It is used to delete a column in table.",
         cmdCategory: "Table",
@@ -913,6 +1022,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 27,
         cmdTitle: "To rename table name",
         cmdDescription: "It is used to rename the table.",
         cmdCategory: "Table",
@@ -920,6 +1030,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 28,
         cmdTitle: "To rename column and its datatype",
         cmdDescription:
           "It is used to rename the column name and its datatype. Constraint is optional rest mandatory even if datatype change not needed, write previous datatype.",
@@ -928,6 +1039,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 29,
         cmdTitle: "To modify column's datatype and constraint",
         cmdDescription:
           "It is used to modify the datatype and constraint of a column.",
@@ -936,6 +1048,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 30,
         cmdTitle: "To grant privilages to a table",
         cmdDescription:
           "It is used to grant access rights/privilages to a table. It can be for different operations such as SELECT/INSERT/etc.",
@@ -944,6 +1057,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 31,
         cmdTitle: "To revoke privilages from a table",
         cmdDescription:
           "It is used to revoke access rights/privilages from a table. It can be for different operations such as SELECT/INSERT/etc.",
@@ -953,6 +1067,7 @@ export const Commands = [
 
       // Constraints
       {
+        cmdId: 32,
         cmdTitle: "Do not accept NULL values for a column",
         cmdDescription:
           "It do not allows addition of NULL values for that column in the table. Used in schema.",
@@ -961,6 +1076,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 33,
         cmdTitle: "Accept only unique values for a column",
         cmdDescription:
           "It only allows UNIQUE values for that column in the table. Used in schema.",
@@ -969,6 +1085,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 34,
         cmdTitle: "Set 1 column as Primary Key",
         cmdDescription:
           "It makes a column as PRIMARY KEY in the table i.e. NOT NULL and UNIQUE. Used in schema.",
@@ -977,6 +1094,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 35,
         cmdTitle: "Set many columns as Primary Key",
         cmdDescription:
           "It makes group of columns to together act as PRIMARY KEY in the table. Used in schema.",
@@ -985,6 +1103,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 36,
         cmdTitle: "Set 1 column as Foreign Key",
         cmdDescription:
           "It makes the column as Foreign Key for that table referencing to other table having the column as Primary Key. Used in schema.",
@@ -993,6 +1112,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 37,
         cmdTitle: "Cascading Foreign Keys",
         cmdDescription:
           "It allows updation/deletion to be reflected on related table (having FK) from parent table (having PK). Used in schema.",
@@ -1001,6 +1121,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 38,
         cmdTitle: "Set default value of a column",
         cmdDescription:
           "It initializes a column as default values rather than NULL. Used in schema.",
@@ -1009,6 +1130,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 39,
         cmdTitle: "Indexing for fast data storage and retrieval",
         cmdDescription:
           "It allows quick storage and retrieval of data using indexing. Used in schema.",
@@ -1017,6 +1139,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 40,
         cmdTitle: "Insert after checking values",
         cmdDescription:
           "It inserts value only after checking the condition usually for the permissible range of values. Used in schema.",
@@ -1025,6 +1148,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 41,
         cmdTitle: "Alternate syntax of constraint",
         cmdDescription:
           "It is used to apply constraint as a separate entity on a column.",
@@ -1034,6 +1158,7 @@ export const Commands = [
 
       // Clauses
       {
+        cmdId: 42,
         cmdTitle: "Conditional creation of database/table",
         cmdDescription:
           "It only creates database/table if it does not exist already. It is used to avoid error while running many lines.",
@@ -1042,6 +1167,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 43,
         cmdTitle: "Conditional deletion of database/table",
         cmdDescription:
           "It only deletes database/table if it exists. It is used to avoid error while running many lines.",
@@ -1050,6 +1176,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 44,
         cmdTitle: "To filter out specific rows based on condition",
         cmdDescription:
           "It is used to filter out specific rows from the table w.r.t. a condition.",
@@ -1058,6 +1185,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 45,
         cmdTitle: "To display limited no. of rows",
         cmdDescription:
           "It is used to display only limited number of rows from the table.",
@@ -1066,6 +1194,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 46,
         cmdTitle: "To display limited no. of rows",
         cmdDescription:
           "It is used to display only limited number of rows from the table. e.g. FETCH FIRST n ROWS ONLY",
@@ -1074,6 +1203,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 47,
         cmdTitle: "To display specific rows after limited no. of rows",
         cmdDescription:
           "It is used to display specific number of rows after limit.",
@@ -1082,6 +1212,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 48,
         cmdTitle: "To sort column data",
         cmdDescription:
           "It is used to sort the column both numerically as well as alphabetically either in ascending (default) or descending orders.",
@@ -1090,6 +1221,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 49,
         cmdTitle: "To group many rows into a category",
         cmdDescription:
           "It is used to group rows related by a data/single column value.",
@@ -1098,6 +1230,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 50,
         cmdTitle: "To filter out specific gruped rows based on condition",
         cmdDescription:
           "It is used to filter out specific grouped rows from the table w.r.t. a condition. Used with GROUP BY clause.",
@@ -1107,6 +1240,7 @@ export const Commands = [
 
       // Operators
       {
+        cmdId: 51,
         cmdTitle: "Arithmetic operators",
         cmdDescription:
           "It is used to perform arithmetic operation usually on a column.",
@@ -1115,6 +1249,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 52,
         cmdTitle: "Comparison operators",
         cmdDescription: "It is used to compare two items usually two columns.",
         cmdCategory: "Operators",
@@ -1122,6 +1257,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 53,
         cmdTitle: "Logical operators",
         cmdDescription:
           "It is used to perform logical operations usually to combine many conditions.",
@@ -1130,6 +1266,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 54,
         cmdTitle: "Bitwise operators",
         cmdDescription:
           "It is used to perform bitwise logical operations on binary bits.",
@@ -1138,6 +1275,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 55,
         cmdTitle: "Aliasing operators",
         cmdDescription:
           "It is used to give alias/nickname to a column or item or using as smaller nickname in the same query.",
@@ -1147,6 +1285,7 @@ export const Commands = [
 
       // Aggregate Functions
       {
+        cmdId: 56,
         cmdTitle: "To count no. of items in a column",
         cmdDescription: "It is used to count number of data items of a column.",
         cmdCategory: "Aggregate Functions",
@@ -1154,6 +1293,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 57,
         cmdTitle: "To get maximum value of a column",
         cmdDescription: "It is used to get maximum of data items of a column.",
         cmdCategory: "Aggregate Functions",
@@ -1161,6 +1301,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 58,
         cmdTitle: "To get minimum value of a column",
         cmdDescription: "It is used to get minimum of data items of a column.",
         cmdCategory: "Aggregate Functions",
@@ -1168,6 +1309,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 59,
         cmdTitle: "To get average value of a column",
         cmdDescription: "It is used to get average of data items of a column.",
         cmdCategory: "Aggregate Functions",
@@ -1175,6 +1317,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 60,
         cmdTitle: "To get sum of all values of a column",
         cmdDescription: "It is used to get sum of data items of a column.",
         cmdCategory: "Aggregate Functions",
@@ -1183,6 +1326,7 @@ export const Commands = [
 
       // Joins
       {
+        cmdId: 61,
         cmdTitle: "Inner join",
         cmdDescription:
           "It is used to perform inner join on two tables to display overlapping data usually based on related columns in tables A and B.",
@@ -1191,6 +1335,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 62,
         cmdTitle: "Left outer join",
         cmdDescription:
           "It is used to perform left outer join on two tables to display left table's full data usually based on related columns in tables A and B.",
@@ -1199,6 +1344,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 63,
         cmdTitle: "Right outer join",
         cmdDescription:
           "It is used to perform right outer join on two tables to display right table's full data usually based on related columns in tables A and B.",
@@ -1207,6 +1353,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 64,
         cmdTitle: "Full join",
         cmdDescription:
           "It is used to perform full join on two tables to display full data combined usually based on related columns in tables A and B. It is performed indirectly by UNION of left and right joins.",
@@ -1215,6 +1362,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 65,
         cmdTitle: "Left exclusive join",
         cmdDescription:
           "It is used to perform left exclusive join on two tables to display only left table's data other than overlapping usually based on related columns in tables A and B. Overlapping data is filtered out by WHERE condition.",
@@ -1223,6 +1371,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 66,
         cmdTitle: "Right exclusive join",
         cmdDescription:
           "It is used to perform right exclusive join on two tables to display only right table's data other than overlapping data usually based on related columns in tables A and B. Overlapping data is filtered out by WHERE condition.",
@@ -1231,6 +1380,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 67,
         cmdTitle: "Full exclusive join",
         cmdDescription:
           "It is used to perform full exclusive join on two tables to display only overlapping data. It is performed indirectly by UNION of left and right exclusive joins.",
@@ -1239,6 +1389,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 68,
         cmdTitle: "Self join",
         cmdDescription:
           "It is used to perform self join on single table acting as both tableA and tableB to display selective data usually based on related/required column. Alias is must here.",
@@ -1247,6 +1398,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 69,
         cmdTitle: "Union without duplicates",
         cmdDescription:
           "It is used to perform UNION operation on two tables having same selected columns, similar datatypes and same order of columns. It gives unique data and not duplicates especially overlapping data only once.",
@@ -1255,6 +1407,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 70,
         cmdTitle: "Union with duplicates",
         cmdDescription:
           "It is used to perform UNION operation on two tables having same selected columns, similar datatypes and same order of columns. It gives duplicates.",
@@ -1264,6 +1417,7 @@ export const Commands = [
 
       // Subqueries
       {
+        cmdId: 71,
         cmdTitle: "WHERE subquery as logic",
         cmdDescription:
           "It is used after WHERE to act as a logic/answer to compare. For single result, usual operators can be used whereas for list of result, IN operator is used.",
@@ -1272,6 +1426,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 72,
         cmdTitle: "FROM subquery as table",
         cmdDescription:
           "It is used after FROM to act as a table. Alias is mandatory here to make it work.",
@@ -1280,6 +1435,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 73,
         cmdTitle: "SELECT subquery as column",
         cmdDescription:
           "It is used after FROM to act as a column. Subquery should return only 1 column not many else it won't be compatible with other columns used with it.",
@@ -1289,6 +1445,7 @@ export const Commands = [
 
       // Views
       {
+        cmdId: 74,
         cmdTitle: "To create a view in selected database",
         cmdDescription:
           "Creates a view/virtual table in the selected database. AS is used to define condition for storing selective data in this view. Rest SELECT and other commands work same as table just give viewName instead of table name.",
@@ -1297,6 +1454,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 75,
         cmdTitle: "To permanently delete view",
         cmdDescription: "It permanently deletes the view.",
         cmdCategory: "Views",
@@ -1318,6 +1476,7 @@ export const Commands = [
     commands: [
       // Installation
       {
+        cmdId: 1,
         cmdTitle: "Install postgres & pgadmin (Linux, Method 1)",
         cmdDescription:
           "It install the postgres directly (pc password needed).",
@@ -1326,6 +1485,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Install postgres (Linux, Method 2)",
         cmdDescription:
           "It install the postgres through a detailed script as per customization (pc password needed).",
@@ -1334,6 +1494,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 3,
         cmdTitle: "Install pgadmin (Linux, Method 2)",
         cmdDescription:
           "It install the postgres through a detailed script as per customization (pc password needed).",
@@ -1343,6 +1504,7 @@ export const Commands = [
 
       // Configuration
       {
+        cmdId: 4,
         cmdTitle: "Open postgres in CLI (before password configuration)",
         cmdDescription:
           "It initializes Postgres server configuration. It should display postgres@username:~$.",
@@ -1351,6 +1513,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Start connection in postgres CLI",
         cmdDescription:
           "It initializes Postgres connection. It should display postgres=#. Now SQL commands can be used. To exit, type exit; .",
@@ -1359,6 +1522,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 6,
         cmdTitle: "To configure password",
         cmdDescription:
           "It configures password for a username set in pgadmin 4. Workflow: pgAdmin servers > register > server > name, hostname, address, password > CLI password set > pgAdmin save",
@@ -1368,6 +1532,7 @@ export const Commands = [
 
       // Database
       {
+        cmdId: 7,
         cmdTitle: "Open postgres in CLI",
         cmdDescription:
           "It initializes Postgres server configuration. It should display postgres@username:~$.",
@@ -1376,6 +1541,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 8,
         cmdTitle: "Start connection in postgres CLI",
         cmdDescription:
           "It initializes Postgres connection. It should display postgres=#. Now SQL commands can be used. To exit, type exit; .",
@@ -1384,6 +1550,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle: "To view databases in postgres CLI",
         cmdDescription:
           "It displays all the databases in the connection. Press q to exit.",
@@ -1392,6 +1559,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 10,
         cmdTitle: "To connect to a database in postgres CLI",
         cmdDescription:
           "It connects to a database/schema to create tables. Press \q to exit.",
@@ -1400,6 +1568,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle: "To view tables in postgres CLI",
         cmdDescription: "It displays all the tables in the database/schema.",
         cmdCategory: "Database",
@@ -1407,6 +1576,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 12,
         cmdTitle: "To create a schema/database",
         cmdDescription:
           "It creates a schema/database in the current connection.",
@@ -1415,6 +1585,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 13,
         cmdTitle: "To use a schema/database",
         cmdDescription:
           "It uses a schema/database in the current connection to create tables in it.",
@@ -1424,6 +1595,7 @@ export const Commands = [
 
       // Extension Management
       {
+        cmdId: 14,
         cmdTitle: "To create an extension",
         cmdDescription: "This command is used to create extension in Postgres.",
         cmdCategory: "Extension Management",
@@ -1431,6 +1603,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 15,
         cmdTitle: "To view all extensions",
         cmdDescription: "This command is used to view all extensions Postgres.",
         cmdCategory: "Extension Management",
@@ -1439,6 +1612,7 @@ export const Commands = [
 
       // Differences from MySQL
       {
+        cmdId: 16,
         cmdTitle: "Quotes",
         cmdDescription:
           "Here single quotes '' are used more frequently than double quotes.",
@@ -1447,6 +1621,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 17,
         cmdTitle: "Datatypes",
         cmdDescription:
           "There are some extra datatypes that are used more frequently in Postgres.",
@@ -1455,6 +1630,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 18,
         cmdTitle: "To add column in table",
         cmdDescription: "Here only ADD command is used instead of ADD COLUMN.",
         cmdCategory: "Differences from MySQL",
@@ -1462,6 +1638,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 19,
         cmdTitle: "To update datatype of a column in a table",
         cmdDescription:
           "Here ALTER COLUMN and TYPE commands are used instead of CHANGE or MODIFY.",
@@ -1470,6 +1647,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 20,
         cmdTitle: "To add foreign key in a table after its creation",
         cmdDescription:
           "This is an alternative syntax if FOREIGN KEY is not set in syntax while table creation.",
@@ -1478,6 +1656,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 21,
         cmdTitle: "To check include or not condition",
         cmdDescription:
           "This is keyword used to check compare some set of values in a data with other string given.",
@@ -1486,6 +1665,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 22,
         cmdTitle: "Full join keyword",
         cmdDescription:
           "There full join is directly used instead of indirect union logic.",
@@ -1494,6 +1674,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 23,
         cmdTitle: "To create a procedure function",
         cmdDescription:
           "This command is used to create a procedure function to use repeatable code.",
@@ -1502,6 +1683,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 24,
         cmdTitle: "To call a procedure function",
         cmdDescription: "This command is used to call a procedure function.",
         cmdCategory: "Differences from MySQL",
@@ -1509,6 +1691,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 25,
         cmdTitle:
           "To first attach a trigger function so that trigger creation is allowed",
         cmdDescription:
@@ -1518,6 +1701,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 26,
         cmdTitle:
           "To create a trigger with a function already attached to call it",
         cmdDescription:
@@ -1527,6 +1711,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 27,
         cmdTitle: "Transaction management",
         cmdDescription:
           "The transaction commands are written in BEGIN END block where the transaction output can be Rollback to previous state or Committed finally or Aborted.",
@@ -1548,6 +1733,7 @@ export const Commands = [
     techCategory: "Backend Web Development",
     commands: [
       {
+        cmdId: 1,
         cmdTitle: "Update packages in Linux",
         cmdDescription:
           "It updates the built-in packages (pc password needed).",
@@ -1556,6 +1742,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Curl installation (Linux)",
         cmdDescription:
           "Curl is a tool used to download resources from servers directly from CLI.",
@@ -1564,6 +1751,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 3,
         cmdTitle: "NVM installation by curl",
         cmdDescription:
           "NVM is Node Version Manager i.e. used to download latest Node.js for its new features and support.",
@@ -1572,6 +1760,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 4,
         cmdTitle: "Initializing NVM",
         cmdDescription:
           "NVM is initialized in bash so that it is ready for downloading Node.js.",
@@ -1580,6 +1769,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Installing specific version of Node.js",
         cmdDescription: "NVM is used to download Node.js 20 onwards.",
         cmdCategory: "Installation",
@@ -1587,6 +1777,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 6,
         cmdTitle: "Configure Node.js for all users",
         cmdDescription:
           "NVM is used to configure Node.js 20 for all projects in that system.",
@@ -1595,6 +1786,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 7,
         cmdTitle: "Install postman (Linux)",
         cmdDescription: "Postman is used to test APIs.",
         cmdCategory: "Installation",
@@ -1603,6 +1795,7 @@ export const Commands = [
 
       // Node PostgreSQL
       {
+        cmdId: 8,
         cmdTitle: "Initialize npm",
         cmdDescription:
           "Node Package Manager (NPM) is used to install packages and dependencies for node project.",
@@ -1611,6 +1804,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 9,
         cmdTitle: "Install packages",
         cmdDescription:
           "The packages listed are used to develop express postgres application.",
@@ -1619,6 +1813,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 10,
         cmdTitle: "To configure modern ES6 syntax",
         cmdDescription:
           "This command is used in package.json to configure react-like modern imports and syntax.",
@@ -1627,6 +1822,7 @@ export const Commands = [
       },
 
       {
+        cmdId: 11,
         cmdTitle:
           "index.js - Expressjs server connection and routes setup (CRUD Project)",
         cmdDescription:
@@ -1656,6 +1852,7 @@ connection();`,
       },
 
       {
+        cmdId: 12,
         cmdTitle:
           "connection.js - Postgres database connection and model creation (CRUD Project)",
         cmdDescription:
@@ -1698,6 +1895,7 @@ export { connection, UserModel };`,
       },
 
       {
+        cmdId: 13,
         cmdTitle:
           "model.js - Postgres schema/table/model creation (CRUD Project)",
         cmdDescription:
@@ -1733,6 +1931,7 @@ export const createUserModel = async (sequelize) => {
       },
 
       {
+        cmdId: 14,
         cmdTitle:
           "routes.js - Routing in Postgres database same as mongodb (CRUD Project)",
         cmdDescription:
@@ -1751,6 +1950,7 @@ export default router;`,
       },
 
       {
+        cmdId: 15,
         cmdTitle:
           "controller.js - Controllers in Postgres database mostly same as mongodb (CRUD Project)",
         cmdDescription:
@@ -1834,6 +2034,7 @@ export const deleteEmp = async (req, res) => {
     commands: [
       // Installation
       {
+        cmdId: 1,
         cmdTitle: "Install Redis Stack via Docker",
         cmdDescription:
           "It installs Redis Stack through docker as an image. Docker must be installed in the system to use this.",
@@ -1843,6 +2044,7 @@ export const deleteEmp = async (req, res) => {
 
       // Redis CLI
       {
+        cmdId: 2,
         cmdTitle: "To start Redis server",
         cmdDescription:
           "It start the Redis server in docker. Make sure docker desktop is opened.",
@@ -1851,6 +2053,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 3,
         cmdTitle: "To use Redis CLI",
         cmdDescription:
           "It opens Redis CLI in terminal (in interactive mode) to use Redis commands. It shows 127.0.0.1:6379> which means entered into redis-cli. Make sure docker desktop is opened.",
@@ -1859,6 +2062,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 4,
         cmdTitle: "To check Redis CLI working or not",
         cmdDescription:
           "It is used to check redis-cli working or not. It displays PONG as a result. Make sure docker desktop is opened.",
@@ -1867,6 +2071,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 5,
         cmdTitle: "To check Redis server information",
         cmdDescription:
           "It is used to check Redis server information. Make sure docker desktop is opened.",
@@ -1875,6 +2080,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 6,
         cmdTitle: "To store a key value pair",
         cmdDescription:
           "It is used to store a key value pair in Redis database. Make sure docker desktop is opened.",
@@ -1883,6 +2089,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 7,
         cmdTitle: "To store a key value pair",
         cmdDescription:
           "It is used to store a key value pair in Redis database that automatically deletes after certain time. Make sure docker desktop is opened.",
@@ -1891,6 +2098,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 8,
         cmdTitle: "To view a value based on key",
         cmdDescription:
           "It is used to retrieve a value based on key from Redis database. Make sure docker desktop is opened.",
@@ -1899,6 +2107,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 9,
         cmdTitle: "To delete a key value pair",
         cmdDescription:
           "It is used to delete a key value pair from Redis database. Make sure docker desktop is opened.",
@@ -1907,6 +2116,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 10,
         cmdTitle: "To see all stored keys",
         cmdDescription:
           "It is used to view all keys stored in Redis database. Make sure docker desktop is opened.",
@@ -1915,6 +2125,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 11,
         cmdTitle: "To store item in list from left side (as Queue)",
         cmdDescription:
           "It is used store an item in Redis database from left side. Make sure docker desktop is opened.",
@@ -1923,6 +2134,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 12,
         cmdTitle: "To store item in list from right side (as Queue)",
         cmdDescription:
           "It is used store an item in Redis database from right side. Make sure docker desktop is opened.",
@@ -1931,6 +2143,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 13,
         cmdTitle: "To delete an item from list from left side (as Queue)",
         cmdDescription:
           "It is used to delete an item from Redis database from left side. Make sure docker desktop is opened.",
@@ -1939,6 +2152,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 14,
         cmdTitle: "To delete an item from list from right side (as Queue)",
         cmdDescription:
           "It is used to delete an item from Redis database from right side. Make sure docker desktop is opened.",
@@ -1947,6 +2161,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 15,
         cmdTitle: "To view length of stored list (as Queue)",
         cmdDescription:
           "It is used to view length of list stored in Redis database. Make sure docker desktop is opened.",
@@ -1955,6 +2170,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 16,
         cmdTitle: "To store an item in hashmap/dictionary (as Hashmap)",
         cmdDescription:
           "It is used to store items as hashmap/dictionary in Redis database e.g. HSET user:1 name Rakesh age 30 city Mumbai. Make sure docker desktop is opened.",
@@ -1963,6 +2179,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 17,
         cmdTitle: "To view full data of hashmap/dictionary (as Hashmap)",
         cmdDescription:
           "It is used to view full data of stored hashmap/dictionary in Redis database e.g. HGETALL user:1. Make sure docker desktop is opened.",
@@ -1971,6 +2188,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 18,
         cmdTitle: "To view specific data of hashmap/dictionary (as Hashmap)",
         cmdDescription:
           "It is used to view specific data of stored hashmap/dictionary in Redis database e.g. HGETALL user:1 name. Make sure docker desktop is opened.",
@@ -1979,6 +2197,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 19,
         cmdTitle: "To exit from Redis CLI",
         cmdDescription:
           "It is used to exit Redis CLI after usage. Make sure docker desktop is opened.",
@@ -1987,6 +2206,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 20,
         cmdTitle: "To stop Redis server",
         cmdDescription:
           "It stops the Redis server in docker. Make sure docker desktop is opened.",
@@ -1996,6 +2216,7 @@ export const deleteEmp = async (req, res) => {
 
       // Redis and Node.js
       {
+        cmdId: 21,
         cmdTitle: "To install Redis in Node.js",
         cmdDescription: "It installs Redis library in Node.js.",
         cmdCategory: "Redis and Node.js",
@@ -2003,6 +2224,7 @@ export const deleteEmp = async (req, res) => {
       },
 
       {
+        cmdId: 22,
         cmdTitle: "To configure Redis (Redis Node.js Project, controller.js)",
         cmdDescription: "It configures Redis as a client.",
         cmdCategory: "Redis and Node.js",
@@ -2012,6 +2234,7 @@ const client = await createClient().on("error", (err)=>console.log(err)).connect
       },
 
       {
+        cmdId: 23,
         cmdTitle:
           "To configure url key caching logic (Redis Node.js Project, controller.js)",
         cmdDescription:
@@ -2032,6 +2255,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 24,
         cmdTitle:
           "To configure caching at GET API (Redis Node.js Project, controller.js)",
         cmdDescription:
@@ -2057,6 +2281,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 25,
         cmdTitle:
           "To handle cache invalidation by configuring eviction policies Redis CLI (Redis Node.js Project, controller.js)",
         cmdDescription:
@@ -2066,6 +2291,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 26,
         cmdTitle:
           "To handle cache invalidation at POST API after configuring policies in Redis CLI (Redis Node.js Project, controller.js)",
         cmdDescription:
@@ -2092,6 +2318,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
     commands: [
       // Syntax
       {
+        cmdId: 1,
         cmdTitle: "Headings",
         cmdDescription:
           "It is used to give level-wise headings to increase text size.",
@@ -2102,6 +2329,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 2,
         cmdTitle: "Text formatting",
         cmdDescription: "It is used to bold, italicize and cut text.",
         cmdCategory: "Syntax",
@@ -2111,6 +2339,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 3,
         cmdTitle: "Lists (unordered & ordered)",
         cmdDescription:
           "It is used to bold, italicize and cut text. In place of -, use desirable list numbering format for ordered list e.g. 1, 2, 3.",
@@ -2121,6 +2350,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 4,
         cmdTitle: "Links and Images",
         cmdDescription: "It is used to attach links/images to the file.",
         cmdCategory: "Syntax",
@@ -2129,6 +2359,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 5,
         cmdTitle: "Shaded text (usually code/routes)",
         cmdDescription:
           "It is used to shade the given text e.g. small snippet for syntax, routes, etc.",
@@ -2137,6 +2368,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 6,
         cmdTitle: "Block of code",
         cmdDescription:
           "It is used to provide a block of code with proper IDE like view.",
@@ -2145,6 +2377,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 7,
         cmdTitle: "Block of code with copy button",
         cmdDescription:
           "It is used to provide a block of code with copy button.",
@@ -2153,6 +2386,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 8,
         cmdTitle: "Block of code with comments",
         cmdDescription: "It is used to provide a comment in block of code.",
         cmdCategory: "Syntax",
@@ -2160,6 +2394,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 9,
         cmdTitle: "Tables",
         cmdDescription:
           "It is used to create a table. Data block size is auto-adjusted.",
@@ -2171,6 +2406,7 @@ return sortedParams ? \`\${baseUrl}:\${sortedParams}\` : baseUrl;
       },
 
       {
+        cmdId: 10,
         cmdTitle: "Horizontal line for separation",
         cmdDescription: "It is used to provide a horizontal separation line.",
         cmdCategory: "Syntax",
