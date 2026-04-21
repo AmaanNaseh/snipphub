@@ -55,6 +55,8 @@ const Hero = ({ theme }) => {
           <p className="bg-neon-blue-gradient px-2 py-1 rounded">
             Collaboration
           </p>
+
+          <p className="bg-neon-blue-gradient px-2 py-1 rounded">Free API</p>
         </div>
 
         {/* Technologies */}
