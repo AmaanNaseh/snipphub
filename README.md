@@ -24,7 +24,7 @@ This repository is made public for open source contributions. Feel free to contr
 
 **Expectations:** Elaborate dataset to cover any other technology you like so that your skills about that technology can be enhanced.
 
-**How to Contribute?** Follow the steps given below to contribute in this project:
+**How to Contribute?** Follow the steps given below to contribute in this project or watch the video <a href="">Open-Source Contribution Guide</a>:
 
 ### STEP 1: PROJECT SETUP
 
@@ -133,7 +133,7 @@ cd snipphub-master
 
 # Push code to GitHub
 git add .
-git commit -m "added technologyName in the dataset";
+git commit -m "added technologyName in the dataset"
 git push origin yourBranchName
 ```
 
@@ -141,13 +141,23 @@ git push origin yourBranchName
 
 1. Go to https://github.com/AmaanNaseh/snipphub.git
 
+<img width="931" height="285" alt="Image" src="https://github.com/user-attachments/assets/a9747e41-ca39-421f-b63b-ac1170aed026" />
+
 2. Select your branch
 
-3. Click Contribute or Made few changes, create PR
+<img width="920" height="327" alt="Image" src="https://github.com/user-attachments/assets/8e561e53-d9f3-4ddb-b0e0-d02aafc54872" />
 
-4. Enter comment and create PR
+3. You can select any of the two available options to make PULL REQUEST
 
-5. Done
+- contribute/your-name had recent pushes some minutes ago > Compare & pull request
+  OR
+- Contribute button > Open Pull Request
+
+<img width="920" height="429" alt="Image" src="https://github.com/user-attachments/assets/e57e7b5b-28bb-4011-bac7-8c7323af8285" />
+
+4. Click Create pull request button and finally your contribution is done.
+
+<img width="1920" height="809" alt="Image" src="https://github.com/user-attachments/assets/376b54ef-18b8-4b6d-a66c-aca104c1f6ec" />
 
 ---
 
