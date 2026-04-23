@@ -139,38 +139,45 @@ git push origin yourBranchName
 
 ### STEP 4: CREATE PULL REQUEST IN GITHUB
 
-1. Go to https://github.com/AmaanNaseh/snipphub.git
+1. **Go to https://github.com/AmaanNaseh/snipphub.git**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/a9747e41-ca39-421f-b63b-ac1170aed026" />
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/28bf28b0-18e0-464d-9724-519f8e249077" />
 </div>
 
-2. Select your branch
+<br />
+
+2. **Select your branch**
 
 <div align="center">
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/8e561e53-d9f3-4ddb-b0e0-d02aafc54872" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/7ea319ac-1d83-48d2-abac-c62748684252" />
 </div>
 
-3. You can select any of the two available options to make PULL REQUEST
+<br />
+
+3. **You can select any of the two available options to make PULL REQUEST**
 
 - contribute/your-name had recent pushes some minutes ago > Compare & pull request
-  OR
 - Contribute button > Open Pull Request
 
 <div align="center">
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e57e7b5b-28bb-4011-bac7-8c7323af8285" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/b1fc991a-21fc-480c-97dc-aa465c5db71a" />
 </div>
 
-4. Click Create pull request button.
+<br />
+
+4. **Click Create pull request button**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/376b54ef-18b8-4b6d-a66c-aca104c1f6ec" />
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/61aa55d9-680c-4ef2-b966-1cb9897114bb" />
 </div>
 
-5. Finally your contribution is done !!!
+<br />
+
+5. **Finally your contribution is done !!!**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/3f32762b-9c33-4762-a6a1-3bb030a23c2d" />
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/52e690e4-4153-4903-8c64-91af72e7b6e0" />
 </div>
 
 ---
