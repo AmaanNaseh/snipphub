@@ -139,40 +139,57 @@ git push origin yourBranchName
 
 ### STEP 4: CREATE PULL REQUEST IN GITHUB
 
-1. Go to https://github.com/AmaanNaseh/snipphub.git
+1. **Go to https://github.com/AmaanNaseh/snipphub.git**
 
-<img width="931" height="285" alt="Image" src="https://github.com/user-attachments/assets/a9747e41-ca39-421f-b63b-ac1170aed026" />
+<div align="center">
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/28bf28b0-18e0-464d-9724-519f8e249077" />
+</div>
 
-2. Select your branch
+<br />
 
-<img width="920" height="327" alt="Image" src="https://github.com/user-attachments/assets/8e561e53-d9f3-4ddb-b0e0-d02aafc54872" />
+2. **Select your branch**
 
-3. You can select any of the two available options to make PULL REQUEST
+<div align="center">
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/7ea319ac-1d83-48d2-abac-c62748684252" />
+</div>
+
+<br />
+
+3. **You can select any of the two available options to make PULL REQUEST**
 
 - contribute/your-name had recent pushes some minutes ago > Compare & pull request
-  OR
 - Contribute button > Open Pull Request
 
-<img width="920" height="429" alt="Image" src="https://github.com/user-attachments/assets/e57e7b5b-28bb-4011-bac7-8c7323af8285" />
+<div align="center">
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/b1fc991a-21fc-480c-97dc-aa465c5db71a" />
+</div>
 
-4. Click Create pull request button.
+<br />
 
-<img width="1920" height="809" alt="Image" src="https://github.com/user-attachments/assets/376b54ef-18b8-4b6d-a66c-aca104c1f6ec" />
+4. **Click Create pull request button**
 
-5. Finally your contribution is done !!!
+<div align="center">
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/61aa55d9-680c-4ef2-b966-1cb9897114bb" />
+</div>
 
-<img width="2412" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3f32762b-9c33-4762-a6a1-3bb030a23c2d" />
+<br />
+
+5. **Finally your contribution is done !!!**
+
+<div align="center">
+<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/52e690e4-4153-4903-8c64-91af72e7b6e0" />
+</div>
 
 ---
 
 # Preview Images
 
-<img width="2460" height="753" alt="Image" src="https://github.com/user-attachments/assets/7b1bd895-8871-46b0-b5b2-6ef2a075b815" />
+<div align="center">
+<img width="1000" height="500" alt="Image" src="https://github.com/user-attachments/assets/a761c1b6-9f29-494c-b8ad-9bc7151ce70d" />
 
-<img width="920" height="327" alt="Image" src="https://github.com/user-attachments/assets/e949985f-b0c8-4bb9-a63d-6fb42bb1eceb" />
+<img width="1000" height="500" alt="Image" src="https://github.com/user-attachments/assets/14a3584a-c317-4ec3-aa96-b3b798f9730d" />
 
-<img width="2316" height="1080" alt="Image" src="https://github.com/user-attachments/assets/00244dba-29e3-412a-b300-15bb286254bd" />
+<img width="1000" height="500" alt="Image" src="https://github.com/user-attachments/assets/c4c30ecc-144d-4bb3-8fbe-0855ccb70ab6" />
 
-<img width="1920" height="809" alt="Image" src="https://github.com/user-attachments/assets/7cd447f8-7b14-4579-9157-67dd10f0d73c" />
-
-<img width="2412" height="1080" alt="Image" src="https://github.com/user-attachments/assets/aea3cc2b-f7bb-4da1-b4b3-ab43c425c3f7" />
+<img width="1000" height="500" alt="Image" src="https://github.com/user-attachments/assets/061dce7b-8c92-4e0e-ba74-e32afd9d9f47" />
+</div>
