@@ -18,7 +18,7 @@ import SectionTitle from "../components/SectionTitle";
 const HomePage = ({ theme }) => {
   const uniqueCategories = [
     ...new Set(Commands.map((item) => item.techCategory)),
-  ].sort((a, b) => a.localeCompare(b));
+  ].sort((a, b) => b.localeCompare(a)); // reverse sorted
 
   return (
     <div className="flex flex-col items-center justify-center gap-28">

@@ -260,12 +260,16 @@ const CommandsPage = ({ theme }) => {
                       <pre className="text-md md:text-lg lg:text-xl w-full bg-[#0d1117] text-white rounded p-4 overflow-x-auto">
                         {item.cmd}
                       </pre>
-                      <IoCopyOutline
-                        onClick={() => {
-                          handleCopy(item.cmd);
-                        }}
-                        className="text-2xl hover:scale-110 transition-all duration-300 text-white cursor-pointer absolute right-1 top-1"
-                      />
+
+                      <div className="absolute right-1 top-1 flex flex-col items-center justify-center gap-1">
+                        <IoCopyOutline
+                          onClick={() => {
+                            handleCopy(item.cmd);
+                          }}
+                          className="text-2xl hover:scale-110 transition-all duration-300 text-white cursor-pointer"
+                        />
+                        <p className="text-[10px]">id: {item.cmdId}</p>
+                      </div>
                     </div>
                     <button
                       onClick={() => {
