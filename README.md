@@ -2,19 +2,11 @@
 
 An all in one free open-source platform for copy pasting commands of different tools and technologies. SnippHub supports sharing and collaboration among the community as well as it provides free API with usage documentation.
 
----
+**Features**
 
-# Features
-
-- 300+ commands
-- 10+ technologies
-- Copyable Commands for CLI
-- Copyable Snippets for Projects
-- Shareable commands
+- 300+ copyable commands, 10+ technologies, CLI and Snippets support
 - Filters and Searching specific commands
-- API for setting up commands database in your system
-- Export API data as downloadable JSON file
-- Quick learning & revision of commands
+- API for sharing commands
 
 ---
 
@@ -87,6 +79,8 @@ npm run dev
 
 Although you are free to make changes anywhere, but it is highly recommended that you only change the dataset as code is made in such a way that the moment you change dataset, it is automatically reflected in frontend.
 
+**Commands**
+
 ```bash
 # Navigate to Commands.jsx file in frontend & find this file
 frontend/src/datasets/Commands.jsx
@@ -123,6 +117,45 @@ export const Commands = [
 ];
 ```
 
+<br />
+
+**To feature your details in SnippHub's Website**
+
+```bash
+# Navigate to Contributors.jsx file in frontend & find this file
+frontend/src/datasets/Contributors.jsx
+```
+
+```bash
+# Type of JSON dataset structure used in this file
+export const Contributors = [
+    {
+        id: number, # must be in increasing order
+        imageUrl: "", # OPTIONAL: your image address preferably copied from github profile picture (leave blank "" if not available)
+        name: "Your Full Name",
+        github: "https://github.com/your-user-name", # your GitHub's link
+        contributions: "Your contributions", # a brief summary of contributions you made in SnippHub
+
+    },
+
+    # Use above format and paste your information
+];
+```
+
+<br />
+
+**To feature your details in SnippHub's GitHub**
+
+```bash
+# Navigate to README.md file
+snipphub-master/README.md
+```
+
+```bash
+# Add your details as per following format in the Contributors section
+- <a href="https://github.com/your-user-name>">Your Full Name</a>
+```
+
 ### STEP 3: PUSH CHANGES TO GITHUB IN YOUR BRANCH ONLY
 
 Commit and push changes to your branch and create pull request. **NEVER MERGE PRs ON YOUR OWN**.
@@ -142,7 +175,7 @@ git push origin yourBranchName
 1. **Go to https://github.com/AmaanNaseh/snipphub.git**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/28bf28b0-18e0-464d-9724-519f8e249077" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/28bf28b0-18e0-464d-9724-519f8e249077" />
 </div>
 
 <br />
@@ -169,7 +202,7 @@ git push origin yourBranchName
 4. **Click Create pull request button**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/61aa55d9-680c-4ef2-b966-1cb9897114bb" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/61aa55d9-680c-4ef2-b966-1cb9897114bb" />
 </div>
 
 <br />
@@ -177,8 +210,16 @@ git push origin yourBranchName
 5. **Finally your contribution is done !!!**
 
 <div align="center">
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/52e690e4-4153-4903-8c64-91af72e7b6e0" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/52e690e4-4153-4903-8c64-91af72e7b6e0" />
 </div>
+
+<br />
+
+---
+
+# Contributors
+
+- <a href="https://github.com/AmaanNaseh">Amaan Naseh</a>
 
 ---
 
