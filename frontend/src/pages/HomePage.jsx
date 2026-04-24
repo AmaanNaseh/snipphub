@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Commands } from "../datasets/Commands";
+import { Contributors } from "../datasets/Contributors";
 
 // Assets
 import api_interface from "../assets/api_interface.png";
@@ -10,6 +11,8 @@ import api_interface from "../assets/api_interface.png";
 import HeroAnimation from "../components/HomePage/HeroAnimation";
 import Hero from "../components/HomePage/Hero";
 import TechCards from "../components/HomePage/TechCards";
+import ContributorsCard from "../components/HomePage/ContributorsCard";
+
 import CodeLaptop from "../components/HomePage/CodeLaptop";
 import CodeMobile from "../components/HomePage/CodeMobile";
 
@@ -110,6 +113,29 @@ const HomePage = ({ theme }) => {
             <TechCards theme={theme} techCategory={category} />
           </div>
         ))}
+      </div>
+
+      {/* Open-Source Contributors */}
+      <div className="space-y-16 w-full">
+        <SectionTitle
+          title={"Open-Source Contributors"}
+          description={
+            "Contributions eliminate the gap from skills to real-life validation "
+          }
+        />
+
+        <a
+          className="flex items-center justify-center"
+          href="https://github.com/AmaanNaseh/snipphub"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="bg-neon-blue-gradient px-4 py-2 text-lg md:text-xl text-white font-bold rounded hover:scale-105 transition-all duration-300">
+            Feel Free to Contribute
+          </button>
+        </a>
+
+        <ContributorsCard theme={theme} />
       </div>
     </div>
   );
