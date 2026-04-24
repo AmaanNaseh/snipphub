@@ -29,7 +29,7 @@ git clone https://github.com/AmaanNaseh/snipphub.git
 
 ```bash
 # Go to project directory
-cd snipphub-master
+cd snipphub
 ```
 
 ```bash
@@ -150,7 +150,7 @@ export const Contributors = [
 
 ```bash
 # Navigate to README.md file
-snipphub-master/README.md
+snipphub/README.md
 ```
 
 ```bash
@@ -164,7 +164,7 @@ Commit and push changes to your branch and create pull request. **NEVER MERGE PR
 
 ```bash
 # Open new terminal and go to project root directory
-cd snipphub-master
+cd snipphub
 
 # Push code to GitHub
 git add .
