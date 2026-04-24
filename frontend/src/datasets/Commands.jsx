@@ -12,6 +12,7 @@ import { SiMysql, SiExpress, SiMongodb, SiCplusplus } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import { GrReactjs } from "react-icons/gr";
+import { TfiControlStop } from "react-icons/tfi";
 
 export const Commands = [
   // HTML
@@ -3790,6 +3791,32 @@ fetchData(); // call whenever needed
 ├── .gitignore
 ├── package.json
 └── README.md`,
+      },
+    ],
+  },
+
+  // New Technology
+  {
+    techRoute: "/route",
+    techName: "Name",
+    techIcon: TfiControlStop,
+    techDescription: "Description",
+    techCategory: "Existing or your own",
+    commands: [
+      {
+        cmdId: 1,
+        cmdTitle: "Command Title",
+        cmdDescription: "Command Description",
+        cmdCategory: "Command Category",
+        cmd: "Actual Command",
+      },
+
+      {
+        cmdId: 1,
+        cmdTitle: "Command Title",
+        cmdDescription: "Command Description",
+        cmdCategory: "Command Category",
+        cmd: "Actual Command",
       },
     ],
   },

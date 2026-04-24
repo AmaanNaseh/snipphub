@@ -222,6 +222,7 @@ git push origin yourBranchName
 # Contributors
 
 - <a href="https://github.com/AmaanNaseh">Amaan Naseh</a>
+- <a href="your github link">Your Name</a>
 
 ---
 
