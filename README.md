@@ -1,6 +1,6 @@
 # Snipphub
 
-An all in one free open-source platform for copy pasting commands of different tools and technologies. SnippHub supports sharing and collaboration among the community as well as it provides free API with usage documentation.
+An all in one free open-source platform for copy pasting commands of different tools and technologies. SnippHub supports sharing and collaboration among the community as well as it provides free API with usage documentation. It also serves as an open-source contribution platform for other developers to contribute.
 
 **Features**
 
@@ -17,6 +17,8 @@ This repository is made public for open source contributions. Feel free to contr
 **Expectations:** Elaborate dataset to cover any other technology you like so that your skills about that technology can be enhanced.
 
 **How to Contribute?** Follow the steps given below to contribute in this project or watch the video <a href="">Open-Source Contribution Guide</a>:
+
+**Need Guidance?** Feel free to contact me at <a href="mailto:naseh.amaan@gmail.com">naseh.amaan@gmail.com</a>
 
 ### STEP 1: PROJECT SETUP
 
@@ -153,7 +155,7 @@ snipphub-master/README.md
 
 ```bash
 # Add your details as per following format in the Contributors section
-- <a href="https://github.com/your-user-name>">Your Full Name</a>
+- <a href="https://github.com/your-user-name">Your Full Name</a>
 ```
 
 ### STEP 3: PUSH CHANGES TO GITHUB IN YOUR BRANCH ONLY
