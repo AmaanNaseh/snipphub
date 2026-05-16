@@ -69,6 +69,28 @@ const HomePage = ({ theme }) => {
         </div>
       </div>
 
+      {/* Cards */}
+      <div className="space-y-16 w-full">
+        <SectionTitle
+          title={"Technologies"}
+          description={
+            "Dive into the world of snippets !!! Explore the vast ocean of technologies and see how they work"
+          }
+        />
+
+        {uniqueCategories.map((category) => (
+          <div
+            key={category}
+            className="flex flex-col items-center justify-center gap-4"
+          >
+            <h1 className="font-bold bg-clip-text text-transparent bg-neon-blue-gradient">
+              {category}
+            </h1>
+            <TechCards theme={theme} techCategory={category} />
+          </div>
+        ))}
+      </div>
+
       {/* API Section */}
       <div className="space-y-16 w-full">
         <SectionTitle
@@ -91,28 +113,6 @@ const HomePage = ({ theme }) => {
             className="w-full h-full min-h-[200px]"
           />
         </div>
-      </div>
-
-      {/* Cards */}
-      <div className="space-y-16 w-full">
-        <SectionTitle
-          title={"Technologies"}
-          description={
-            "Dive into the world of snippets !!! Explore the vast ocean of technologies and see how they work"
-          }
-        />
-
-        {uniqueCategories.map((category) => (
-          <div
-            key={category}
-            className="flex flex-col items-center justify-center gap-4"
-          >
-            <h1 className="font-bold bg-clip-text text-transparent bg-neon-blue-gradient">
-              {category}
-            </h1>
-            <TechCards theme={theme} techCategory={category} />
-          </div>
-        ))}
       </div>
 
       {/* Open-Source Contributors */}
